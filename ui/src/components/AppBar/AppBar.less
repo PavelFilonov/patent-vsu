@@ -1,0 +1,70 @@
+@import '~assets/styles/theme.less';
+
+:global(.ant-row-flex).headerContainer {
+    width: 100%;
+    background: #fff;
+    flex-flow: row;
+}
+
+.container {
+    background: #fff;
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    :global(.ant-tabs-bar) {
+        border: none;
+    }
+}
+
+.controls {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    margin-right: 28px;
+}
+
+.userInfoPopover {
+    z-index: 100;
+
+    :global {
+        .ant-popover-inner-content {
+            padding: 0;
+        }
+        .ant-popover-arrow {
+            display: none;
+        }
+        .ant-popover-inner {
+            border-radius: 0;
+        }
+    }
+}
+
+@media (max-width: 1639px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+.userName {
+    display: flex;
+    cursor: pointer;
+    font-family: open_sanssemibold;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 24px;
+}
+
+.arrowDown {
+    height: 24px;
+    &:after {
+        content: url('./img/down.svg');
+    }
+}
+.arrowUp {
+    height: 24px;
+    &:after {
+        content: url('./img/up.svg');
+    }
+}

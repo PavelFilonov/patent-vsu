@@ -1,0 +1,17 @@
+{
+  "name": "userEditBackToList",
+  "type": "BackToList",
+  "bc": "userEdit",
+  "showCondition": [],
+  "fields": [],
+  "axisFields": [],
+  "chart": [],
+  "options": {
+    "previousPage": "Users",
+    "actionGroups": {
+      "include": [
+        "cancel"
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "userInfoPersonalAttributes",
+  "title": "Личные данные",
+  "type": "Info",
+  "bc": "userRead",
+  "fields": [
+    {
+      "label": "Фамилия",
+      "key": "lastName",
+      "type": "input"
+    },
+    {
+      "label": "Имя",
+      "key": "firstName",
+      "type": "input"
+    },
+    {
+      "label": "Отчество",
+      "key": "patronymic",
+      "type": "input"
+    },
+    {
+      "label": "Логин",
+      "key": "login",
+      "type": "input"
+    },
+    {
+      "label": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "statusBgColor"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "lastName",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "firstName",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "patronymic",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "login",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "status",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

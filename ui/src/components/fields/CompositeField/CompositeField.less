@@ -1,0 +1,74 @@
+@import '~assets/styles/theme';
+
+.text {
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    font-size: 16px;
+}
+
+.popoverContainer {
+    :global {
+        .ant-popover-inner-content {
+            font-family: open_sansregular;
+            font-size: 16px;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            color: rgba(0, 0, 0, 0.85);
+            max-height: 680px;
+            overflow-y: auto;
+
+            span {
+                font-weight: normal;
+            }
+
+            h4 {
+                font-weight: 600;
+            }
+        }
+
+        .ant-popover-arrow {
+            display: none;
+        }
+    }
+}
+.maxWidth {
+    max-width: 426px;
+}
+
+.fieldContentContainer {
+    :global {
+        .ant-typography {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.popoverTriggerLabel {
+    color: @brown-grey;
+    display: inline-block;
+    border-bottom: 2px dashed @brown-grey;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: 600;
+    font-family: 'open_sanssemibold';
+}
+
+.valueContainer {
+    white-space: pre-line;
+    max-height: 144px;
+    overflow: hidden;
+}
+
+.popoverTextContainer {
+    white-space: pre-line;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-break: break-word;
+}

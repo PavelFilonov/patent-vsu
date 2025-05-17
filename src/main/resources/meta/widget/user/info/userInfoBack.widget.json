@@ -1,0 +1,11 @@
+{
+  "name": "userInfoBack",
+  "type": "HistoryBack",
+  "bc": "userRead",
+  "options": {
+    "historyBackOptions": {
+      "previousPage": "Пользователи",
+      "url": "/screen/administration"
+    }
+  }
+}

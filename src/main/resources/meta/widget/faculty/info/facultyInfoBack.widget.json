@@ -1,0 +1,11 @@
+{
+  "name": "facultyInfoBack",
+  "type": "HistoryBack",
+  "bc": "facultyRead",
+  "options": {
+    "historyBackOptions": {
+      "previousPage": "Факультеты",
+      "url": "/screen/administration"
+    }
+  }
+}

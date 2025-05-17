@@ -1,0 +1,17 @@
+.dragIcon {
+    cursor: pointer;
+    margin-right: 10px;
+    visibility: hidden;
+}
+
+tr:hover .dragIcon {
+    visibility: visible;
+}
+
+:global {
+    .row-dragging {
+        img[alt='dragIcon'] {
+            visibility: visible;
+        }
+    }
+}

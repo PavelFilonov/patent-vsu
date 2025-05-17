@@ -1,0 +1,89 @@
+@import '~assets/styles/theme.less';
+
+.menuContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 264px;
+
+    :global(.ant-divider-horizontal) {
+        margin: 0;
+    }
+}
+
+.loginContainer {
+    padding: 13px 12px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.fullName {
+    font-family: open_sanssemibold;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 24px;
+}
+.login {
+    font-family: open_sansregular;
+    font-size: 12px;
+    line-height: 1.75;
+    color: rgba(0, 0, 0, 0.5);
+    //color: rgba(0, 0, 0, 0.85);
+}
+
+.signOutBtn {
+    display: inline-flex;
+
+    &:before {
+        margin-right: 10px;
+        content: url('../img/logout.svg');
+    }
+}
+
+.signOutContainer {
+    margin: 4px 0;
+    :global {
+        .ant-btn {
+            width: 100%;
+            text-align: left;
+            padding: 0 12px;
+            color: @nice-blue;
+
+            & > span {
+                display: inline-flex;
+            }
+        }
+    }
+}
+
+.roleBtnWrapper {
+    margin-top: 4px;
+    margin-right: 12px;
+
+    :global {
+        .ant-btn {
+            box-shadow: none;
+            width: 90%;
+            text-align: left;
+            padding: 0 12px;
+            border-radius: 2px;
+            border: none;
+            &:focus {
+                border: none;
+            }
+        }
+    }
+}
+.checked {
+    display: flex;
+    align-items: center;
+
+    &:after {
+        content: url('../img/ok.svg');
+    }
+}
+
+.mt2 {
+    margin-top: 2px;
+}
+.mb4 {
+    margin-bottom: 4px;
+}

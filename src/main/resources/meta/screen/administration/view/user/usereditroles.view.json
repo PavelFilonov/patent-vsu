@@ -1,0 +1,36 @@
+{
+  "name": "usereditroles",
+  "title": "Редактирование пользователя",
+  "template": "DashboardView",
+  "url": "/screen/administration/view/usereditroles",
+  "widgets": [
+    {
+      "widgetName": "userEditBackToList",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "userEditHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "userEditStep",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "userEditRoles",
+      "position": 4,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "userEditButtons",
+      "position": 5,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор"
+  ]
+}

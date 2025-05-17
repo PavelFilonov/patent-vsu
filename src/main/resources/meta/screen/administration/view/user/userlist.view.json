@@ -1,0 +1,21 @@
+{
+  "name": "userlist",
+  "title": "Пользователи",
+  "template": "DashboardView",
+  "url": "/screen/administration/view/userlist",
+  "widgets": [
+    {
+      "widgetName": "SecondLevelMenu",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "userList",
+      "position": 2,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор"
+  ]
+}

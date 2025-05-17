@@ -1,0 +1,53 @@
+{
+  "name": "innovationInfoRequest",
+  "title": "Запрос",
+  "type": "Info",
+  "bc": "innovationRead",
+  "fields": [
+    {
+      "label": "№ заявки",
+      "key": "requestNumber",
+      "type": "number"
+    },
+    {
+      "label": "Дата подачи заявки",
+      "key": "submissionDate",
+      "type": "date"
+    },
+    {
+      "label": "Исходящий номер",
+      "key": "outgoingNumber",
+      "type": "number"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "requestNumber",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "submissionDate",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "outgoingNumber",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+    "translation": {
+        "Attention": "Внимание",
+        "No Filters": "Нет Фильтров",
+        "Extended Filters": "Расширенные фильтры",
+        "Nothing found": "Ничего не найдено",
+        "Try changing filter settings": "Попробуйте изменить параметры фильтрации",
+        "More Filters": "Больше Фильтров",
+        "Less Filters": "Меньше Фильтров",
+        "Reset filters": "Сбросить фильтры",
+        "Selected filters": "Выбранные фильтры",
+        "No operations available": "Нет доступных операций",
+        "Master Language": "Мастер язык",
+        "English": "Английский",
+        "The list of languages is empty": "Список языков пуст",
+        "Refresh": "Обновить",
+        "Screen is missing or unavailable for your role": "Этот экран не доступен для роли {{role}}.",
+        "Copied": "Скопировано",
+        "Status": "Статус",
+        "Help": "Помощь",
+        "Filters": "Фильтры",
+        "Yes": "Да",
+        "No": "Нет",
+        "Comment": "Комментарий",
+        "Back": "Назад",
+        "Administration": "Администрирование",
+        "Sign Out": "Выйти",
+        "Select date": "Выбрать дату"
+    }
+}

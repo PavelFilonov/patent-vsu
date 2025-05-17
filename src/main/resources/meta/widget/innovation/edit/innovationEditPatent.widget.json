@@ -1,0 +1,56 @@
+{
+  "name": "innovationEditPatent",
+  "title": "Патент",
+  "type": "Form",
+  "bc": "innovationEdit",
+  "fields": [
+    {
+      "label": "№ патента",
+      "key": "patentNumber",
+      "type": "number"
+    },
+    {
+      "label": "Дата государственной регистрации",
+      "key": "registrationDate",
+      "type": "date"
+    },
+    {
+      "label": "Дата приоритета патента",
+      "key": "priorityDate",
+      "type": "date"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "patentNumber",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "registrationDate",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "priorityDate",
+              "span": 7
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "databaseInfoBack",
+  "type": "HistoryBack",
+  "bc": "databaseRead",
+  "options": {
+    "historyBackOptions": {
+      "previousPage": "",
+      "url": "/screen/registry"
+    }
+  }
+}

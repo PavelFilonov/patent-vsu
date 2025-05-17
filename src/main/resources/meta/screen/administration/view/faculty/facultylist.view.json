@@ -1,0 +1,21 @@
+{
+  "name": "facultylist",
+  "title": "Роли",
+  "template": "DashboardView",
+  "url": "/screen/administration/view/facultylist",
+  "widgets": [
+    {
+      "widgetName": "SecondLevelMenu",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "facultyList",
+      "position": 2,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "userEditStep",
+  "title": "",
+  "type": "Steps",
+  "bc": "userEdit",
+  "fields": [
+    {
+      "label": "editStep",
+      "key": "editStep",
+      "type": "input"
+    }
+  ],
+  "options": {
+    "stepsOptions": {
+      "stepsDictionaryKey": "editStep"
+    }
+  }
+}

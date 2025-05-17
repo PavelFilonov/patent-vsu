@@ -1,0 +1,200 @@
+@import '../../../assets/styles/theme.less';
+
+.icon {
+    color: #595959;
+}
+
+.MenuItemLink {
+    font-size: 16px;
+}
+
+:global(.ant-menu-inline) > .OneItem:global(.ant-menu-item) {
+    height: 46px;
+}
+
+.Container {
+    border-right: 0;
+
+    :global {
+        .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+            padding: 0 30px 0 !important;
+        }
+        .ant-menu-submenu.ant-menu-submenu-inline {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-family: open_sansregular;
+
+            .ant-menu-submenu-title {
+                height: 48px;
+            }
+        }
+        .ant-menu.ant-menu-sub.ant-menu-inline {
+            background: #030303;
+            box-shadow: none;
+
+            .ant-menu-item {
+                height: 25px;
+                line-height: 25px;
+            }
+        }
+
+        .ant-menu {
+            border: 0;
+        }
+
+        .anticon {
+            font-size: 24px !important;
+            line-height: 2;
+        }
+
+        .ant-menu-submenu > .ant-menu-submenu-title {
+            height: auto;
+            padding-right: 16px;
+
+            &::after {
+                right: 6px;
+            }
+        }
+
+        .ant-menu-item:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+
+    .Item {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        font-weight: initial;
+        white-space: normal;
+    }
+
+    .ItemCollapsed {
+        //height: 48px;
+        display: flex;
+        margin: 0;
+        align-items: center;
+        font-weight: initial;
+        white-space: normal;
+    }
+
+    .Item:global(.ant-menu-item),
+    .ItemCollapsed:global(.ant-menu-item) {
+        //height: 48px;
+        padding-right: 5px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-family: open_sansregular;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 3;
+        letter-spacing: normal;
+        white-space: nowrap;
+        opacity: 0.6;
+        color: white;
+    }
+
+    .ItemCollapsed:global(.ant-menu-item) {
+        padding-left: 12px;
+    }
+
+    .SubItem:global(.ant-menu-item) {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.Container:global(.ant-menu-vertical) {
+    border-right: 0;
+}
+
+:global(.ant-menu.ant-menu-dark).Container {
+    background: #030303;
+
+    .Item:global(.ant-menu-item-selected),
+    .ItemCollapsed:global(.ant-menu-item-selected) {
+        background-color: #176db7;
+        opacity: 1;
+    }
+
+    :global {
+        .ant-menu-item-divider {
+            background-color: #030303;
+        }
+
+        .ant-menu-item-active,
+        .ant-menu-item-selected,
+        .ant-menu-submenu-active {
+            opacity: 1;
+            background-color: #030303;
+        }
+
+        .ant-menu-submenu-selected .ant-menu-submenu-title {
+            background-color: #176db7;
+        }
+    }
+}
+.devNavigation {
+    :global {
+        .ant-menu.ant-menu-sub.ant-menu-inline {
+            background-color: @brown-grey;
+        }
+    }
+}
+:global(.ant-menu.ant-menu-dark).Container.devNavigation {
+    background-color: @brown-grey;
+
+    .Item:global(.ant-menu-item-selected),
+    .ItemCollapsed:global(.ant-menu-item-selected) {
+        background-color: #176db7;
+        opacity: 1;
+    }
+
+    :global {
+        //.ant-menu-item-divider {
+        //    background-color: @green-salad;
+        //}
+
+        .ant-menu-item-active,
+        .ant-menu-item-selected,
+        .ant-menu-submenu-active {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+
+        .ant-menu-submenu-selected .ant-menu-submenu-title {
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+.Category {
+    font-weight: 600;
+
+    :global(.ant-menu-submenu-title) {
+        white-space: normal;
+    }
+}
+
+.sideMenuCollapsed {
+    display: none;
+}
+
+.Notification {
+    margin: 10px 0 0 auto;
+    padding: 0 7px;
+    height: 24px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: @menu-text;
+    background-color: @butterscotch;
+}
+
+.ml20 {
+    margin-left: 20px;
+}

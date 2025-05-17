@@ -1,0 +1,10 @@
+ID;BC;PAGE_LIMIT;REPORT_PERIOD;SORT;FILTER
+1;'userRead';10;NULL;NULL;'"status.equalsOneOf=%5B%22%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%22%5D"'
+2;'departmentRead';10;NULL;NULL;'"status.equalsOneOf=%5B%22%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%22%5D"'
+3;'innovationRead';10;NULL;NULL;'"status.equalsOneOf=%5B%22%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%22%5D"'
+4;'usefulModelRead';10;NULL;NULL;'"status.equalsOneOf=%5B%22%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%22%5D"'
+5;'agreementRead';10;NULL;NULL;'"status.equalsOneOf=%5B%22%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%22%5D"'
+6;'programRead';10;NULL;NULL;'"status.equalsOneOf=%5B%22%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%22%5D"'
+7;'databaseRead';10;NULL;NULL;'"status.equalsOneOf=%5B%22%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%22%5D"'
+8;'integratedCircuitRead';10;NULL;NULL;'"status.equalsOneOf=%5B%22%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%22%5D"'
+9;'tradeSecretRead';10;NULL;NULL;'"status.equalsOneOf=%5B%22%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%22%5D"'

@@ -1,0 +1,41 @@
+{
+  "name": "facultyInfo",
+  "title": "",
+  "type": "Info",
+  "bc": "facultyRead",
+  "fields": [
+    {
+      "label": "Наименование факультета",
+      "key": "name",
+      "type": "input"
+    },
+    {
+      "label": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "statusBgColor"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "name",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "status",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

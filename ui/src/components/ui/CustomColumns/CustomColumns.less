@@ -1,0 +1,82 @@
+@import '../../../assets/styles/theme';
+
+.dropDownContainer {
+    :global {
+        .ant-dropdown-menu-item {
+            font-family: open_sansregular;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.85);
+            padding: 10px 12px;
+
+            > .anticon:first-child {
+                font-size: 16px;
+            }
+
+            &:hover {
+                background-color: rgba(230, 230, 230, 40%);
+                color: @nice-blue;
+            }
+        }
+    }
+}
+
+.dotsMenu {
+    display: block;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    .dots {
+        color: @brown-grey;
+        font-size: 24px;
+
+        &:hover {
+            color: @nice-blue;
+        }
+    }
+}
+
+.info {
+    height: 18px;
+    width: 18px;
+    margin-top: 3px;
+    margin-right: -19px;
+    cursor: pointer;
+    background: url('./img/info.svg');
+
+    &:hover {
+        background: url('./img/infoHover.svg');
+    }
+}
+
+.floatMenuSkeletonWrapper {
+    width: 200px;
+}
+
+.popoverContainer {
+    max-width: 492px;
+
+    :global {
+        .ant-popover-inner {
+            border-radius: 0;
+        }
+        .ant-popover-inner-content {
+            max-height: 800px;
+            overflow-y: auto;
+            padding: 24px;
+        }
+
+        .ant-popover-arrow {
+            display: none;
+        }
+    }
+}
+
+.infoColumn {
+    .title {
+        font-size: 24px;
+        font-family: open_sanssemibold;
+        margin-bottom: 0;
+    }
+}

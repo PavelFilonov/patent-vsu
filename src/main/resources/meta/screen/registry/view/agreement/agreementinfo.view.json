@@ -1,0 +1,32 @@
+{
+  "name": "agreementinfo",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/agreementinfo",
+  "widgets": [
+    {
+      "widgetName": "agreementInfoBack",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "agreementInfoHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "agreementInfoMain",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "agreementInfoSubject",
+      "position": 4,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник"
+  ]
+}

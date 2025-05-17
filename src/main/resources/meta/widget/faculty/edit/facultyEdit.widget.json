@@ -1,0 +1,33 @@
+{
+  "name": "facultyEdit",
+  "title": "",
+  "type": "Form",
+  "bc": "facultyEdit",
+  "fields": [
+    {
+      "label": "Наименование факультета",
+      "key": "name",
+      "type": "input"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "name",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  },
+  "rolesAllowed": [
+    "Administrator"
+  ]
+}

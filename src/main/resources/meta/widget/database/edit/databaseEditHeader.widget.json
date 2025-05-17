@@ -1,0 +1,8 @@
+{
+  "name": "databaseEditHeader",
+  "title": "Редактирование базы данных",
+  "type": "Header",
+  "bc": "databaseEdit",
+  "fields": [
+  ]
+}

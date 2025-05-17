@@ -1,0 +1,8 @@
+{
+  "name": "innovationEditHeader",
+  "title": "Редактирование заявки на изобретение",
+  "type": "Header",
+  "bc": "innovationEdit",
+  "fields": [
+  ]
+}

@@ -1,0 +1,63 @@
+.root {
+    &.upper {
+        text-transform: uppercase;
+    }
+
+    &.strong {
+        font-weight: bold;
+    }
+}
+
+.raPrimary {
+    &:global(.ant-btn) {
+        border-radius: 0;
+    }
+    &:global(.ant-btn-primary) {
+        background-color: #176db7;
+    }
+    &:global(.ant-btn-primary:hover),
+    &:global(.ant-btn-primary:focus) {
+        color: #fff;
+        background-color: #1088e7;
+        border-color: #1088e7;
+    }
+}
+
+.raLink {
+    &:global(.ant-btn-link) {
+        color: #176db7;
+    }
+    &:global(.ant-btn-link:hover),
+    &:global(.ant-btn-link:focus) {
+        color: #1088e7;
+    }
+}
+
+.saDefaultBlue {
+    &:global(.ant-btn) {
+        border: 1px solid #176db7;
+        border-radius: 2px;
+        color: #176db7;
+    }
+
+    &:global(.ant-btn:hover),
+    &:global(.ant-btn:focus) {
+        color: #ffffff;
+        border-color: #176db7;
+        background: #176db7;
+    }
+}
+
+.saDefaultGray {
+    &:global(.ant-btn) {
+        border: 1px solid #bfbfbf;
+        border-radius: 2px;
+        color: #000000;
+    }
+
+    &:global(.ant-btn:hover),
+    &:global(.ant-btn:focus) {
+        color: #1088e7;
+        border-color: #1088e7;
+    }
+}

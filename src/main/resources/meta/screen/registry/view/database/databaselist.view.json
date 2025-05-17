@@ -1,0 +1,23 @@
+{
+  "name": "databaselist",
+  "title": "Реестр баз данных",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/databaselist",
+  "widgets": [
+    {
+      "widgetName": "SecondLevelMenu",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "databaseList",
+      "position": 2,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник",
+    "Автор"
+  ]
+}

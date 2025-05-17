@@ -1,0 +1,13 @@
+{
+  "name": "innovationInfoHeader",
+  "title": "${name}",
+  "type": "Header",
+  "bc": "innovationRead",
+  "fields": [
+    {
+      "label": "name",
+      "key": "name",
+      "type": "hidden"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "innovationEditRequest",
+  "title": "Запрос",
+  "type": "Form",
+  "bc": "innovationEdit",
+  "fields": [
+    {
+      "label": "№ заявки",
+      "key": "requestNumber",
+      "type": "number"
+    },
+    {
+      "label": "Дата подачи заявки",
+      "key": "submissionDate",
+      "type": "date"
+    },
+    {
+      "label": "Исходящий номер",
+      "key": "outgoingNumber",
+      "type": "number"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "requestNumber",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "submissionDate",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "outgoingNumber",
+              "span": 7
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  }
+}

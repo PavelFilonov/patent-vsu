@@ -1,0 +1,11 @@
+{
+  "name": "agreementInfoBack",
+  "type": "HistoryBack",
+  "bc": "agreementRead",
+  "options": {
+    "historyBackOptions": {
+      "previousPage": "",
+      "url": "/screen/registry"
+    }
+  }
+}

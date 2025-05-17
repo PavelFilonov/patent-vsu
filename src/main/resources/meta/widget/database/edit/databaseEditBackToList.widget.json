@@ -1,0 +1,17 @@
+{
+  "name": "databaseEditBackToList",
+  "type": "BackToList",
+  "bc": "databaseEdit",
+  "showCondition": [],
+  "fields": [],
+  "axisFields": [],
+  "chart": [],
+  "options": {
+    "previousPage": "",
+    "actionGroups": {
+      "include": [
+        "cancel"
+      ]
+    }
+  }
+}

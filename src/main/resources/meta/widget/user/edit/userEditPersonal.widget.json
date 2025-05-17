@@ -1,0 +1,85 @@
+{
+  "name": "userEditPersonal",
+  "title": "Личные данные",
+  "type": "Form",
+  "bc": "userEdit",
+  "fields": [
+    {
+      "label": "Фамилия",
+      "key": "lastName",
+      "type": "input"
+    },
+    {
+      "label": "Имя",
+      "key": "firstName",
+      "type": "input"
+    },
+    {
+      "label": "Отчество",
+      "key": "patronymic",
+      "type": "input"
+    },
+    {
+      "label": "Логин",
+      "key": "login",
+      "type": "input"
+    },
+    {
+      "label": "Пароль",
+      "key": "password",
+      "type": "input"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "lastName",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "firstName",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "patronymic",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "login",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "password",
+              "span": 7
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  },
+  "rolesAllowed": [
+    "Administrator"
+  ]
+}

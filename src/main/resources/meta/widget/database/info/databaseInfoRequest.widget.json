@@ -1,0 +1,66 @@
+{
+  "name": "databaseInfoRequest",
+  "title": "Регистрация",
+  "type": "Info",
+  "bc": "databaseRead",
+  "fields": [
+    {
+      "label": "Где зарегистрировано",
+      "key": "registrationPlace",
+      "type": "input"
+    },
+    {
+      "label": "Дата регистрации",
+      "key": "registrationDate",
+      "type": "date"
+    },
+    {
+      "label": "№ регистрационного свидетельства",
+      "key": "certificateNumber",
+      "type": "number"
+    },
+    {
+      "label": "№ заявки",
+      "key": "requestNumber",
+      "type": "number"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "registrationPlace",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "registrationDate",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "certificateNumber",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "requestNumber",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

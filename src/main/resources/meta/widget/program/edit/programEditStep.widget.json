@@ -1,0 +1,18 @@
+{
+  "name": "programEditStep",
+  "title": "",
+  "type": "Steps",
+  "bc": "programEdit",
+  "fields": [
+    {
+      "label": "editStep",
+      "key": "editStep",
+      "type": "input"
+    }
+  ],
+  "options": {
+    "stepsOptions": {
+      "stepsDictionaryKey": "editStep"
+    }
+  }
+}

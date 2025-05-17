@@ -1,0 +1,33 @@
+{
+  "name": "userEditRoles",
+  "title": "Роли",
+  "type": "Form",
+  "bc": "userEdit",
+  "fields": [
+    {
+      "label": "",
+      "key": "roles",
+      "type": "multipleSelect"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "roles",
+              "span": 7
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  },
+  "rolesAllowed": [
+    "Administrator"
+  ]
+}

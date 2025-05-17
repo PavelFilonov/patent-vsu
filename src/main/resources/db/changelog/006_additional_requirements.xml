@@ -1,0 +1,144 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+  logicalFilePath="db/changelog/005.xml">
+
+  <changeSet id="ADDED ENTITY TYPES" author="pfilonov">
+    <addColumn tableName="innovation">
+      <column name="entity_type" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+    <addColumn tableName="program">
+      <column name="entity_type" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+    <dropColumn tableName="program" columnName="type"/>
+  </changeSet>
+  
+  <changeSet id="DROPPED AUTHORS TEXT COLUMNS" author="pfilonov">
+    <dropColumn tableName="program" columnName="authors"/>
+    <dropColumn tableName="innovation" columnName="authors"/>
+  </changeSet>
+
+  <changeSet id="ADDED USER_PROGRAM TABLE" author="pfilonov">
+    <createTable tableName="USER_PROGRAM">
+      <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+        <constraints primaryKey="true"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date" type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+        type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      
+      <column name="user_id" type="number(19, 0)">
+        <constraints foreignKeyName="fk_user_program_user_id" references="users(id)"/>
+      </column>
+      <column name="program_id" type="number(19, 0)">
+        <constraints foreignKeyName="fk_user_program_program_id" references="program(id)"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+  <changeSet id="ADDED USER_INNOVATION TABLE" author="pfilonov">
+    <createTable tableName="USER_INNOVATION">
+      <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+        <constraints primaryKey="true"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date" type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+        type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="user_id" type="number(19, 0)">
+        <constraints foreignKeyName="fk_user_innovation_user_id" references="users(id)"/>
+      </column>
+      <column name="innovation_id" type="number(19, 0)">
+        <constraints foreignKeyName="fk_user_innovation_innovation_id" references="innovation(id)"/>
+      </column>
+    </createTable>
+  </changeSet>
+  
+  <changeSet id="ADDED IS ACTIVE FLAGS TO AUTHORS" author="pfilonov">
+    <addColumn tableName="user_program">
+      <column name="is_active" type="boolean" defaultValueBoolean="true"/>
+    </addColumn>
+    <addColumn tableName="user_innovation">
+      <column name="is_active" type="boolean" defaultValueBoolean="true"/>
+    </addColumn>
+    <sql>
+      update user_program
+      set is_active = true;
+    </sql>
+    <sql>
+      update user_innovation
+      set is_active = true;
+    </sql>
+    <addNotNullConstraint tableName="user_program" columnName="is_active"/>
+    <addNotNullConstraint tableName="user_innovation" columnName="is_active"/>
+  </changeSet>
+
+  <changeSet id="ADDED UNIVERSITY_FACULTY TABLE" author="pfilonov">
+    <createTable tableName="UNIVERSITY_FACULTY">
+      <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+        <constraints primaryKey="true"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date" type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+              type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="name" type="varchar(255)"/>
+      <column name="status" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+  <changeSet id="ADDED FACULTY TO DEPARTMENT" author="pfilonov">
+    <addColumn tableName="university_department">
+      <column name="faculty_id" type="number(19, 0)">
+        <constraints foreignKeyName="fk_university_department_faculty_id" references="university_faculty(id)"/>
+      </column>
+    </addColumn>
+  </changeSet>
+
+</databaseChangeLog>

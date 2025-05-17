@@ -1,0 +1,49 @@
+@import '~assets/styles/theme';
+
+.drawerFilterWidget {
+    @radius-const: 2px;
+    @size-const: 24px;
+
+    :global {
+        .ant-drawer-header {
+            padding: 24px;
+            border-bottom: none;
+        }
+
+        .ant-drawer-title {
+            font-size: 24px;
+            font-family: open_sanssemibold;
+        }
+
+        .ant-drawer-close {
+            font-size: @size-const;
+            height: 72px;
+            width: 72px;
+        }
+
+        .ant-select-selection {
+            border-radius: @radius-const;
+        }
+
+        .ant-input {
+            border-radius: @radius-const;
+        }
+
+        .ant-drawer-body {
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 0 @size-const 0 @size-const;
+        }
+    }
+}
+.drawerBodyContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    max-height: 100%;
+    width: 280px;
+}
+
+.customWidth {
+    width: 100%;
+}

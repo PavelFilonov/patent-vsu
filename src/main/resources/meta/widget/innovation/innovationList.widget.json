@@ -1,0 +1,163 @@
+{
+  "name": "innovationList",
+  "title": "Реестр заявок на изобретения",
+  "type": "List",
+  "bc": "innovationRead",
+  "fields": [
+    {
+      "title": "Дело №",
+      "key": "number",
+      "type": "number",
+      "drillDown": true
+    },
+    {
+      "title": "Наименование",
+      "key": "name",
+      "type": "input"
+    },
+    {
+      "title": "Дата подачи заявки и исходящий номер",
+      "key": "submissionDateAndOutgoingNumber",
+      "type": "composite",
+      "fields": [
+        {
+          "title": "Дата подачи заявки",
+          "key": "submissionDate",
+          "type": "date"
+        },
+        {
+          "title": "Исходящий номер",
+          "key": "outgoingNumber",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "title": "№ заявки",
+      "key": "requestNumber",
+      "type": "number"
+    },
+    {
+      "title": "ФИО авторов",
+      "key": "authors",
+      "type": "multivalue"
+    },
+    {
+      "title": "№ патента",
+      "key": "patentNumber",
+      "type": "number"
+    },
+    {
+      "title": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "statusBgColor",
+      "width": 150
+    },
+    {
+      "title": "Дата государственной регистрации",
+      "key": "registrationDate",
+      "type": "date",
+      "hidden": true
+    },
+    {
+      "title": "Дата приоритета патента",
+      "key": "priorityDate",
+      "type": "date",
+      "hidden": true
+    },
+    {
+      "title": "Уведомление о решении формальной экспертизы",
+      "key": "formalDecisionNotificationDate",
+      "type": "date",
+      "hidden": true
+    },
+    {
+      "title": "Ходатайство об экспертизе по существу",
+      "key": "petition",
+      "type": "text",
+      "hidden": true
+    },
+    {
+      "title": "Уведомление о рассмотрении ход-ва о проведении экспертизы по существу",
+      "key": "petitionNotificationDate",
+      "type": "date",
+      "hidden": true
+    },
+    {
+      "title": "Запросы экспертизы",
+      "key": "expertiseRequests",
+      "type": "text",
+      "hidden": true
+    },
+    {
+      "title": "Решение о выдаче патента",
+      "key": "decisionDate",
+      "type": "date",
+      "hidden": true
+    },
+    {
+      "title": "Ходатайство о начислении пошлин в уменьшенном размере",
+      "key": "petitionDuties",
+      "type": "text",
+      "hidden": true
+    },
+    {
+      "title": "Примечания",
+      "key": "note",
+      "type": "text",
+      "hidden": true
+    },
+    {
+      "title": "Действие",
+      "key": "action",
+      "type": "input",
+      "hidden": true
+    },
+    {
+      "title": "Использование",
+      "key": "usage",
+      "type": "text",
+      "hidden": true
+    },
+    {
+      "title": "Мои изобретения",
+      "key": "isMyInnovations",
+      "type": "checkbox",
+      "hidden": true
+    }
+  ],
+  "options": {
+    "drawerFilter": true,
+    "filtersOrder": [
+      "number",
+      "name",
+      "status",
+      "patentNumber",
+      "requestNumber",
+      "outgoingNumber"
+    ],
+    "checkboxFiltersList": [
+      {
+        "filterName": "Мои изобретения",
+        "filterKey": "isMyInnovations"
+      }
+    ],
+    "table": {
+      "width": 1502
+    },
+    "actionGroups": {
+      "include": [
+        "create_innovation",
+        "delete_innovation",
+        "edit_innovation",
+        "deactivate_innovation",
+        "activate_innovation",
+        "open_innovation"
+      ]
+    },
+    "actionTheme": {
+      "create_innovation": "blue"
+    }
+  }
+}

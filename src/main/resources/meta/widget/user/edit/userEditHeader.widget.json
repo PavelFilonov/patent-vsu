@@ -1,0 +1,8 @@
+{
+  "name": "userEditHeader",
+  "title": "Редактирование пользователя",
+  "type": "Header",
+  "bc": "userEdit",
+  "fields": [
+  ]
+}

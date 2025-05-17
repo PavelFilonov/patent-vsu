@@ -1,0 +1,9 @@
+FROM maven:3.9.6-eclipse-temurin-11 AS builder
+WORKDIR /app
+COPY . .
+RUN mvn clean install
+FROM eclipse-temurin:11-jdk
+WORKDIR /app
+COPY --from=builder /app/target/patent-vsu-exec.jar .
+EXPOSE 8080
+CMD ["java", "-jar", "patent-vsu-exec.jar"]

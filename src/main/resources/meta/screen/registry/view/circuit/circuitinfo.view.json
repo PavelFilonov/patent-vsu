@@ -1,0 +1,33 @@
+{
+  "name": "circuitinfo",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/circuitinfo",
+  "widgets": [
+    {
+      "widgetName": "circuitInfoBack",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "circuitInfoHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "circuitInfoMain",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "circuitInfoRequest",
+      "position": 4,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник",
+    "Автор"
+  ]
+}

@@ -1,0 +1,34 @@
+.wrapper {
+    display: flex;
+
+    :global {
+        .ant-input-group .ant-input,
+        .input {
+            width: 40%;
+            text-align: center;
+        }
+
+        .ant-input-group.ant-input-group-compact > *:first-child {
+            border-bottom-left-radius: 2px;
+            border-top-left-radius: 2px;
+        }
+
+        .ant-input-group.ant-input-group-compact > *:last-child {
+            border-left-width: 0;
+            border-bottom-right-radius: 2px;
+            border-top-right-radius: 2px;
+
+            &:focus,
+            &:hover {
+                border-left-width: 1px;
+            }
+        }
+
+        .ant-input[disabled] {
+            background: white;
+            width: 20%;
+            border-left: 0;
+            pointer-events: none;
+        }
+    }
+}

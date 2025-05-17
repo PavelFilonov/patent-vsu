@@ -1,0 +1,95 @@
+{
+  "name": "innovationEditExpertise",
+  "title": "Экспертиза",
+  "type": "Form",
+  "bc": "innovationEdit",
+  "fields": [
+    {
+      "label": "Уведомление о решении формальной экспертизы",
+      "key": "formalDecisionNotificationDate",
+      "type": "date"
+    },
+    {
+      "label": "Ходатайство об экспертизе по существу",
+      "key": "petition",
+      "type": "text"
+    },
+    {
+      "label": "Уведомление о рассмотрении ход-ва о проведении экспертизы по существу",
+      "key": "petitionNotificationDate",
+      "type": "date"
+    },
+    {
+      "label": "Запросы экспертизы",
+      "key": "expertiseRequests",
+      "type": "text"
+    },
+    {
+      "label": "Решение о выдаче патента",
+      "key": "decisionDate",
+      "type": "date"
+    },
+    {
+      "label": "Ходатайство о начислении пошлин в уменьшенном размере",
+      "key": "petitionDuties",
+      "type": "text"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "formalDecisionNotificationDate",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "petition",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "petitionNotificationDate",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "expertiseRequests",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "decisionDate",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "petitionDuties",
+              "span": 7
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "circuitInfoHeader",
+  "title": "${name}",
+  "type": "Header",
+  "bc": "integratedCircuitRead",
+  "fields": [
+    {
+      "label": "name",
+      "key": "name",
+      "type": "hidden"
+    }
+  ]
+}

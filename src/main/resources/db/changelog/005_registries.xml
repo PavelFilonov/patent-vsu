@@ -1,0 +1,288 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+  logicalFilePath="db/changelog/005.xml">
+
+  <changeSet id="ADDED FILE_ENTITY TABLE" author="pfilonov">
+    <createTable tableName="FILE_ENTITY">
+      <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+        <constraints primaryKey="true"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date" type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+        type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValue="DB" name="FILE_STORAGE_CD" remarks="File storage type" type="VARCHAR2(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="FILE_CONTENT" type="BLOB"/>
+      <column name="FILE_NAME" type="VARCHAR2(255)"/>
+      <column name="FILE_TYPE" type="VARCHAR2(255)"/>
+      <column name="FILE_SIZE" type="NUMBER(19, 0)"/>
+      <column name="IS_TEMPORARY" type="BOOLEAN"/>
+      <column name="FILE_URL" type="VARCHAR2(255)"/>
+      <column defaultValueBoolean="false" name="RESTRICTED_FLG" type="BOOLEAN"/>
+      <column defaultValueBoolean="true" name="ACTIVE_FLG" type="BOOLEAN"/>
+      <column name="OBJECT_ID" type="VARCHAR2(255)"/>
+    </createTable>
+  </changeSet>
+
+  <changeSet id="bc_properties data" author="pfilonov" runOnChange="true">
+    <loadUpdateData tableName="BC_PROPERTIES" primaryKey="ID" separator=";" quotchar="'"
+      file="db/data/BC_PROPERTIES.csv">
+      <column header="ID" name="ID" type="NUMERIC"/>
+      <column header="BC" name="BC" type="STRING"/>
+      <column header="PAGE_LIMIT" name="PAGE_LIMIT" type="NUMERIC"/>
+      <column header="REPORT_PERIOD" name="REPORT_PERIOD" type="NUMERIC"/>
+      <column header="SORT" name="SORT" type="STRING"/>
+      <column header="FILTER" name="FILTER" type="STRING"/>
+    </loadUpdateData>
+  </changeSet>
+
+  <changeSet id="ADDED EDIT STEP TO USER" author="pfilonov">
+    <addColumn tableName="users">
+      <column name="edit_step" type="varchar2(30)"/>
+    </addColumn>
+  </changeSet>
+
+  <changeSet id="DROPPED NOT NULL CONSTRAINT FOR internal_role_cd" author="pfilonov">
+    <dropNotNullConstraint tableName="users" columnName="internal_role_cd"/>
+  </changeSet>
+
+  <changeSet id="ADDED INNOVATION TABLE" author="pfilonov">
+    <createTable tableName="INNOVATION">
+      <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+        <constraints primaryKey="true"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date" type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+        type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="name" type="varchar2(255)"/>
+      <column name="number" type="number(19, 0)"/>
+
+      <column name="patent_number" type="number(19, 0)"/>
+      <column name="registration_date" type="date"/>
+      <column name="priority_date" type="date"/>
+      <column name="decision_date" type="date"/>
+
+      <column name="request_number" type="number(19, 0)"/>
+      <column name="submission_date" type="date"/>
+      <column name="outgoing_number" type="number(19, 0)"/>
+
+      <column name="note" type="text"/>
+      <column name="action" type="varchar2(255)"/>
+      <column name="usage" type="text"/>
+      <column name="authors" type="text"/>
+
+      <column name="formal_decision_notification_date" type="date"/>
+      <column name="petition" type="text"/>
+      <column name="petition_notification_date" type="date"/>
+      <column name="expertise_requests" type="text"/>
+      <column name="petition_duties" type="text"/>
+
+      <column name="status" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="edit_step" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+  <changeSet id="ADDED UNIVERSITY_DEPARTMENT TABLE" author="pfilonov">
+    <createTable tableName="UNIVERSITY_DEPARTMENT">
+      <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+        <constraints primaryKey="true"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date" type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+        type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="name" type="varchar(255)"/>
+      <column name="status" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+  <changeSet id="ADDED PROGRAM TABLE" author="pfilonov">
+    <createTable tableName="PROGRAM">
+      <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+        <constraints primaryKey="true"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date" type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+        type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="type" type="varchar2(100)"/>
+      <column name="name" type="varchar2(255)"/>
+
+      <column name="registration_place" type="varchar(255)"/>
+      <column name="registration_date" type="date"/>
+      <column name="certificate_number" type="number(19, 0)"/>
+
+      <column name="department_id" type="number(19, 0)">
+        <constraints foreignKeyName="fk_program_department_id" references="university_department(id)"/>
+      </column>
+      <column name="send_document_date" type="date"/>
+      <column name="note" type="text"/>
+      <column name="notification_creation_date" type="date"/>
+      <column name="request_number" type="number(19, 0)"/>
+      <column name="owners_copyright" type="text"/>
+      <column name="authors" type="text"/>
+      
+      <column name="status" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="edit_step" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+  <changeSet id="ADDED AGREEMENT TABLE" author="pfilonov">
+    <createTable tableName="AGREEMENT">
+      <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+        <constraints primaryKey="true"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date" type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+        type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="number" type="number(19, 0)"/>
+      <column name="agreement_number" type="number(19, 0)"/>
+      <column name="sign_date" type="date"/>
+      <column name="end_date" type="date"/>
+      <column name="type" type="varchar2(255)"/>
+
+      <column name="subject_number" type="number(19, 0)"/>
+      <column name="subject_name" type="varchar2(255)"/>
+      <column name="subject_type" type="varchar2(100)"/>
+
+      <column name="period" type="number(19, 0)"/>
+      <column name="amount" type="number(19, 2)"/>
+      <column name="licensee" type="varchar2(255)"/>
+      <column name="additional_agreement" type="text"/>
+      <column name="licensee_contact_info" type="text"/>
+      <column name="registration_number" type="number(19, 0)"/>
+      <column name="parent_agreement" type="varchar2(255)"/>
+      <column name="note" type="text"/>
+
+      <column name="status" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="edit_step" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+  <changeSet id="ADDED TRADE_SECRET TABLE" author="pfilonov">
+    <createTable tableName="TRADE_SECRET">
+      <column name="ID" remarks="Identifier" type="NUMBER(19, 0)">
+        <constraints primaryKey="true"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="CREATED_DATE" remarks="Creation date" type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueComputed="current_timestamp" name="UPDATED_DATE" remarks="Last updated date"
+        type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="number" type="number(19, 0)"/>
+      <column name="name" type="varchar2(255)"/>
+      <column name="type" type="varchar2(255)"/>
+      <column name="document_number" type="number(19, 0)"/>
+      <column name="document_date" type="date"/>
+      <column name="material_carrier" type="varchar2(255)"/>
+      <column name="responsible_person" type="varchar2(255)"/>
+      <column name="start_date" type="date"/>
+      <column name="end_date" type="date"/>
+      <column name="mip" type="text"/>
+
+      <column name="status" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="edit_step" type="varchar2(30)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+</databaseChangeLog>

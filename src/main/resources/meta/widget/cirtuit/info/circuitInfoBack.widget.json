@@ -1,0 +1,11 @@
+{
+  "name": "circuitInfoBack",
+  "type": "HistoryBack",
+  "bc": "integratedCircuitRead",
+  "options": {
+    "historyBackOptions": {
+      "previousPage": "",
+      "url": "/screen/registry"
+    }
+  }
+}

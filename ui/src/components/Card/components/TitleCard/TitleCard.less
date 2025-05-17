@@ -1,0 +1,77 @@
+@import '~assets/styles/theme.less';
+@questionOutlined: url('~assets/icons/question-circle-o.svg');
+@questionFilled: url('~assets/icons/question-circle.svg');
+.smHeader {
+    font-size: 24px;
+    line-height: 1.56;
+}
+
+.secondHeader {
+    font-size: 32px;
+    line-height: 0.75;
+}
+
+.bigHeader {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.middleTitle {
+    font-family: open_sanssemibold;
+    font-size: 16px;
+    line-height: 1.5;
+    color: @black;
+}
+
+.title {
+    font-family: open_sanssemibold;
+    width: 1304px;
+    line-height: 1.5;
+    color: @black;
+    margin-top: 20px;
+}
+
+i.titleIcon {
+    font-size: 18px;
+    color: @brown-grey;
+    vertical-align: unset;
+    margin-left: 8px;
+}
+
+.questionIcon {
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.questionIcon:hover {
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+}
+.hint {
+    font-family: open_sansregular;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.hintW {
+    width: 400px;
+}
+.popUpContainer {
+    display: flex;
+    align-items: center;
+}
+.helpButton {
+    margin-left: 16px;
+
+    &:global(.ant-btn) {
+        display: flex;
+        align-items: center;
+        height: 40px;
+    }
+
+    i {
+        font-size: 14px;
+    }
+}

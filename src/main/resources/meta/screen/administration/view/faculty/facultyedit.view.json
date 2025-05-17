@@ -1,0 +1,31 @@
+{
+  "name": "facultyedit",
+  "title": "Редактирование факультета",
+  "template": "DashboardView",
+  "url": "/screen/administration/view/facultyedit",
+  "widgets": [
+    {
+      "widgetName": "facultyEditBackToList",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "facultyEditHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "facultyEdit",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "facultyEditButtons",
+      "position": 4,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор"
+  ]
+}

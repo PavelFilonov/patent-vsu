@@ -1,0 +1,56 @@
+@import '~assets/styles/theme';
+
+.drawerFormWidget {
+    color: rgba(0, 0, 0, 0.85);
+
+    .compareWidgetContainer {
+        width: min-content;
+    }
+
+    .checkboxes {
+        padding-bottom: 20px;
+
+        .compare {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.85);
+        }
+    }
+
+    :global {
+        .ant-checkbox-wrapper:hover .ant-checkbox-inner {
+            border-color: @nice-blue;
+        }
+
+        .ant-checkbox.ant-checkbox-checked {
+            content: url('./img/checked.svg');
+
+            .ant-checkbox-inner {
+                background-color: @nice-blue;
+                border-color: @nice-blue;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+
+        .ant-checkbox-inner {
+            height: 22px;
+            width: 22px;
+            border-color: @brown-grey;
+            border-radius: 2px;
+        }
+
+        .ant-drawer-close {
+            font-size: 24px;
+        }
+
+        .ant-drawer-body {
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 0 20px 0 256px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

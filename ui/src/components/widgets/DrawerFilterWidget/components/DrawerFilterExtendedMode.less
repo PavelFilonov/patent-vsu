@@ -1,0 +1,74 @@
+@import '~assets/styles/theme.less';
+
+@checkedIcon: url('~assets/icons/checked.svg');
+@questionOutlined: url('~assets/icons/question-circle-o.svg');
+@questionFilled: url('~assets/icons/question-circle.svg');
+
+.questionIcon {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.checkboxLabel {
+    font-size: 16px;
+}
+
+.popoverContainer {
+    :global {
+        .ant-popover-arrow {
+            display: none;
+        }
+
+        .ant-popover-inner {
+            border-radius: 0;
+        }
+
+        .ant-popover-inner-content {
+            max-width: 492px;
+            padding: 24px 80px 40px 24px;
+        }
+    }
+}
+
+.hintHeader {
+    font-size: 24px;
+    line-height: 1;
+    font-family: open_sanssemibold;
+}
+
+.hint {
+    font-family: open_sansregular;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.wrapper {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+    :global {
+        .ant-checkbox-wrapper {
+            align-items: center;
+        }
+
+        .ant-checkbox.ant-checkbox-checked {
+            content: @checkedIcon;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: @nice-blue;
+            border-color: @nice-blue;
+        }
+
+        .ant-checkbox-inner {
+            height: 22px;
+            width: 22px;
+
+            &::after {
+                left: 28%;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "innovationInfoBack",
+  "type": "HistoryBack",
+  "bc": "innovationRead",
+  "options": {
+    "historyBackOptions": {
+      "previousPage": "",
+      "url": "/screen/registry"
+    }
+  }
+}

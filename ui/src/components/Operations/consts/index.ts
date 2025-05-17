@@ -1,0 +1,2 @@
+export const LANGUAGE_ITEM_HEIGHT = 40
+export const MAX_SHOWED_LANGUAGES = 6

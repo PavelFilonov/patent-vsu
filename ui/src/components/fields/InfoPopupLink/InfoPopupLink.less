@@ -1,0 +1,30 @@
+@import '~assets/styles/theme.less';
+
+:global(.ant-btn).operation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.57;
+    color: @nice-blue;
+    border-radius: 5px;
+    background-color: initial;
+    box-shadow: none;
+
+    &:hover {
+        color: @nice-blue;
+        background-color: initial;
+    }
+}
+
+.link {
+    :global(.ant-btn) {
+        line-height: 24px;
+        font-size: 16px;
+    }
+}

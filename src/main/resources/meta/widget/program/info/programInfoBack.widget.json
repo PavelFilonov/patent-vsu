@@ -1,0 +1,11 @@
+{
+  "name": "programInfoBack",
+  "type": "HistoryBack",
+  "bc": "programRead",
+  "options": {
+    "historyBackOptions": {
+      "previousPage": "",
+      "url": "/screen/registry"
+    }
+  }
+}

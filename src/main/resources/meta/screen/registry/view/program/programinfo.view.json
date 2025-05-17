@@ -1,0 +1,33 @@
+{
+  "name": "programinfo",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/programinfo",
+  "widgets": [
+    {
+      "widgetName": "programInfoBack",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "programInfoHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "programInfoMain",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "programInfoRequest",
+      "position": 4,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник",
+    "Автор"
+  ]
+}

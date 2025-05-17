@@ -1,0 +1,49 @@
+@import '../../../assets/styles/theme';
+
+.fieldAreaBase {
+    display: flex;
+    width: 100%;
+    padding: unset;
+}
+
+div[class*='recordValue'] {
+    font-family: open_sansregular;
+    font-size: 16px;
+    color: @black;
+    line-height: 1.5;
+}
+
+.fieldAreaDirection {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.noFieldSeparator {
+    border-bottom: none;
+}
+
+.labelAreaBase {
+    flex: 2 0;
+    font-family: open_sansbold;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.fieldDataBase {
+    flex: 3 0;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+}
+
+.lableDirection {
+    flex: 0;
+}
+
+.fieldAreaFloat,
+div[class*='fieldAreaFloat'] {
+    margin-bottom: 0;
+}

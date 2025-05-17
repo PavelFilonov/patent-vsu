@@ -1,0 +1,53 @@
+{
+  "name": "agreementInfoSubject",
+  "title": "Предмет договора",
+  "type": "Info",
+  "bc": "agreementRead",
+  "fields": [
+    {
+      "label": "Вид объекта",
+      "key": "subjectType",
+      "type": "dictionary"
+    },
+    {
+      "label": "Название",
+      "key": "subjectName",
+      "type": "input"
+    },
+    {
+      "label": "№ охранного документа",
+      "key": "subjectNumber",
+      "type": "number"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "subjectType",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "subjectName",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "subjectNumber",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

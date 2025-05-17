@@ -1,0 +1,23 @@
+{
+  "name": "circuitlist",
+  "title": "Реестр топологий интегральных микросхем",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/circuitlist",
+  "widgets": [
+    {
+      "widgetName": "SecondLevelMenu",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "circuitList",
+      "position": 2,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник",
+    "Автор"
+  ]
+}

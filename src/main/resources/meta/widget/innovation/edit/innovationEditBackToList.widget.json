@@ -1,0 +1,17 @@
+{
+  "name": "innovationEditBackToList",
+  "type": "BackToList",
+  "bc": "innovationEdit",
+  "showCondition": [],
+  "fields": [],
+  "axisFields": [],
+  "chart": [],
+  "options": {
+    "previousPage": "",
+    "actionGroups": {
+      "include": [
+        "cancel"
+      ]
+    }
+  }
+}

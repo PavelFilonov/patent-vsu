@@ -1,0 +1,47 @@
+@import '~assets/styles/theme';
+
+.checkbox {
+    cursor: pointer;
+    user-select: none;
+    min-width: 84px;
+    min-height: 40px;
+
+    display: flex;
+    border-radius: 20px;
+    border: solid 1px @brown-grey;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        border: solid 1px @nice-blue;
+    }
+}
+.input {
+    display: none;
+}
+.selected {
+    border: solid 2px @nice-blue;
+    &:hover {
+        border: solid 2px @nice-blue;
+    }
+}
+.selectedContainer {
+    position: relative;
+    &::after {
+        right: -2px;
+        border-radius: 11px;
+        background: white;
+        bottom: -4px;
+        position: absolute;
+        height: 24px;
+        content: url('../../../assets/icons/check-circle-blue.svg');
+    }
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    &:hover {
+        border: solid 1px @brown-grey;
+    }
+}

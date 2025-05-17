@@ -1,0 +1,67 @@
+{
+  "name": "usefulModelInfoMain",
+  "title": "Основные данные",
+  "type": "Info",
+  "bc": "usefulModelRead",
+  "fields": [
+    {
+      "label": "Наименование предполагаемого изобретения полезной модели промышленного образца",
+      "key": "name",
+      "type": "input"
+    },
+    {
+      "label": "Дело №",
+      "key": "number",
+      "type": "number"
+    },
+    {
+      "label": "ФИО авторов",
+      "key": "authors",
+      "type": "multivalue"
+    },
+    {
+      "label": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "statusBgColor"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "name",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "number",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "authors",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "status",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

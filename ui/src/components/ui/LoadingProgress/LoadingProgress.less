@@ -1,0 +1,18 @@
+@import '~assets/styles/theme.less';
+
+.sabMenu {
+    z-index: 2147483647;
+    visibility: collapse;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 3px;
+    background: @nice-blue;
+}
+
+.sabMenu.loading {
+    visibility: visible;
+    width: 100%;
+    transition: all 7s;
+}

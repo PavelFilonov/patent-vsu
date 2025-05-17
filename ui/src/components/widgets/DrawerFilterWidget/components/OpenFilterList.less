@@ -1,0 +1,38 @@
+@import '~assets/styles/theme.less';
+
+.bottomBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtersInfo {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: @brown-grey;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.badge {
+    &:global(.ant-badge) {
+        margin-left: 4px;
+    }
+    :global {
+        .ant-badge-count {
+            font-weight: bold;
+            background-color: #cdd4dd;
+        }
+
+        .ant-badge-not-a-wrapper .ant-scroll-number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+            height: 24px;
+            width: 24px;
+        }
+    }
+}

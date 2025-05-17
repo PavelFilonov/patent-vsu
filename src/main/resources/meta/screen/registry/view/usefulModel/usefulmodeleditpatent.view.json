@@ -1,0 +1,37 @@
+{
+  "name": "usefulmodeleditpatent",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/usefulmodeleditpatent",
+  "widgets": [
+    {
+      "widgetName": "usefulModelEditBackToList",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "usefulModelEditHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "usefulModelEditStep",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "usefulModelEditPatent",
+      "position": 4,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "usefulModelEditButtons",
+      "position": 5,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник"
+  ]
+}

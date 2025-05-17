@@ -1,0 +1,37 @@
+{
+  "name": "circuiteditmain",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/circuiteditmain",
+  "widgets": [
+    {
+      "widgetName": "circuitEditBackToList",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "circuitEditHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "circuitEditStep",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "circuitEditMain",
+      "position": 4,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "circuitEditButtons",
+      "position": 5,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник"
+  ]
+}

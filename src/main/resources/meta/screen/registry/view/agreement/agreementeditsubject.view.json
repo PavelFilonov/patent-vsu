@@ -1,0 +1,37 @@
+{
+  "name": "agreementeditsubject",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/agreementeditsubject",
+  "widgets": [
+    {
+      "widgetName": "agreementEditBackToList",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "agreementEditHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "agreementEditStep",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "agreementEditSubject",
+      "position": 4,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "agreementEditButtons",
+      "position": 5,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник"
+  ]
+}

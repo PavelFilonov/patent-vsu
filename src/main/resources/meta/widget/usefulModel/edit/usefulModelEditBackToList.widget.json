@@ -1,0 +1,17 @@
+{
+  "name": "usefulModelEditBackToList",
+  "type": "BackToList",
+  "bc": "usefulModelEdit",
+  "showCondition": [],
+  "fields": [],
+  "axisFields": [],
+  "chart": [],
+  "options": {
+    "previousPage": "",
+    "actionGroups": {
+      "include": [
+        "cancel"
+      ]
+    }
+  }
+}

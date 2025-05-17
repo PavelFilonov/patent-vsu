@@ -1,0 +1,43 @@
+{
+  "name": "facultyList",
+  "title": "Факультеты",
+  "type": "List",
+  "bc": "facultyRead",
+  "fields": [
+    {
+      "title": "Наименование",
+      "key": "name",
+      "type": "input",
+      "drillDown": true
+    },
+    {
+      "title": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "statusBgColor",
+      "width": 150
+    }
+  ],
+  "options": {
+    "drawerFilter": true,
+    "filtersOrder": [
+      "name",
+      "status"
+    ],
+    "table": {
+      "width": 1502
+    },
+    "actionGroups": {
+      "include": [
+        "create_faculty",
+        "delete_faculty",
+        "edit_faculty",
+        "deactivate_faculty",
+        "activate_faculty"
+      ]
+    },
+    "actionTheme": {
+      "create_faculty": "blue"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "programInfoHeader",
+  "title": "${name}",
+  "type": "Header",
+  "bc": "programRead",
+  "fields": [
+    {
+      "label": "name",
+      "key": "name",
+      "type": "hidden"
+    }
+  ]
+}

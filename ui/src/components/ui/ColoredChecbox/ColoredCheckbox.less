@@ -1,0 +1,92 @@
+@import '~assets/styles/theme';
+
+label.checkbox {
+    cursor: pointer;
+    user-select: none;
+    min-width: 84px;
+
+    .container {
+        display: flex;
+        font-size: @font-size-sm;
+        color: @white;
+        font-weight: 700;
+        background-color: gray;
+        border-radius: 16px;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: @nice-blue;
+        }
+        .content {
+            flex: 1;
+            text-align: center;
+            margin: 1px;
+            border: 3px solid white;
+            border-radius: 15px;
+            padding: 3px 10px;
+        }
+    }
+
+    & input {
+        display: none;
+        &:checked + .container {
+            //padding: 2px;
+            background-color: @nice-blue;
+            & > .content {
+                margin: 2px;
+                border-width: 2px;
+                border-radius: 14px;
+            }
+        }
+    }
+}
+
+.checkbox.remoteAudit {
+    @border-radius-base: 17px;
+    @border-size-base: 1.5px;
+    display: inline-block;
+    min-width: 50px;
+    .container {
+        display: inline-block;
+
+        color: @black;
+        font-weight: 400;
+        font-size: @font-size-base;
+        line-height: 1;
+
+        border-radius: @border-radius-base;
+        background-color: transparent;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        .content {
+            display: inline-flex;
+            align-items: center;
+
+            border-radius: @border-radius-base;
+            background-color: @white;
+            padding: 6px 8px;
+
+            border: @border-size-base solid #d0d0d0;
+
+            height: 32px;
+
+            &:hover {
+                border: @border-size-base solid @azure;
+            }
+        }
+    }
+
+    & input {
+        &:checked + .container {
+            background-color: transparent;
+            & > .content {
+                margin: 1px;
+                border: @border-size-base solid @azure;
+                background-color: @light-blue;
+                border-radius: @border-radius-base;
+            }
+        }
+    }
+}

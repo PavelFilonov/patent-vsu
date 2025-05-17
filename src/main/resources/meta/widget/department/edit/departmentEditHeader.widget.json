@@ -1,0 +1,8 @@
+{
+  "name": "departmentEditHeader",
+  "title": "Редактирование кафедры",
+  "type": "Header",
+  "bc": "departmentEdit",
+  "fields": [
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "programEditBackToList",
+  "type": "BackToList",
+  "bc": "programEdit",
+  "showCondition": [],
+  "fields": [],
+  "axisFields": [],
+  "chart": [],
+  "options": {
+    "previousPage": "",
+    "actionGroups": {
+      "include": [
+        "cancel"
+      ]
+    }
+  }
+}

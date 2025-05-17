@@ -1,0 +1,23 @@
+{
+  "name": "usefulmodellist",
+  "title": "Реестр заявок на полезные модели",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/usefulmodellist",
+  "widgets": [
+    {
+      "widgetName": "SecondLevelMenu",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "usefulModelList",
+      "position": 2,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник",
+    "Автор"
+  ]
+}

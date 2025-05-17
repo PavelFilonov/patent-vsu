@@ -1,0 +1,46 @@
+{
+  "name": "departmentEdit",
+  "title": "",
+  "type": "Form",
+  "bc": "departmentEdit",
+  "fields": [
+    {
+      "label": "Наименование кафедры",
+      "key": "name",
+      "type": "input"
+    },
+    {
+      "label": "Факультет",
+      "key": "facultyName",
+      "type": "dictionary"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "name",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "facultyName",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  },
+  "rolesAllowed": [
+    "Administrator"
+  ]
+}

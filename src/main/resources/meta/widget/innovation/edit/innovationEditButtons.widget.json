@@ -1,0 +1,23 @@
+{
+  "name": "innovationEditButtons",
+  "title": "",
+  "type": "Form",
+  "bc": "innovationEdit",
+  "fields": [],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "cancel",
+        "saveAsDraft",
+        "previous",
+        "next",
+        "finish"
+      ]
+    },
+    "actionTheme": {
+      "next": "blue",
+      "finish": "blue",
+      "cancel": "link"
+    }
+  }
+}

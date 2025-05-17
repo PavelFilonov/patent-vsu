@@ -1,0 +1,48 @@
+{
+  "name": "usefulmodelinfo",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/usefulmodelinfo",
+  "widgets": [
+    {
+      "widgetName": "usefulModelInfoBack",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "usefulModelInfoHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "usefulModelInfoMain",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "usefulModelInfoRequest",
+      "position": 4,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "usefulModelInfoPatent",
+      "position": 5,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "usefulModelInfoExpertise",
+      "position": 6,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "usefulModelInfoAdditional",
+      "position": 7,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник",
+    "Автор"
+  ]
+}

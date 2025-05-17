@@ -1,0 +1,1 @@
+export const NUMBER_DEFAULT_FILTERS = 8

@@ -1,0 +1,21 @@
+{
+  "name": "departmentlist",
+  "title": "Роли",
+  "template": "DashboardView",
+  "url": "/screen/administration/view/departmentlist",
+  "widgets": [
+    {
+      "widgetName": "SecondLevelMenu",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "departmentList",
+      "position": 2,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор"
+  ]
+}

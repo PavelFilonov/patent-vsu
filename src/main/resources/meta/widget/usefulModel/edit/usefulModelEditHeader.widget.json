@@ -1,0 +1,8 @@
+{
+  "name": "usefulModelEditHeader",
+  "title": "Редактирование заявки на полезную модель",
+  "type": "Header",
+  "bc": "usefulModelEdit",
+  "fields": [
+  ]
+}

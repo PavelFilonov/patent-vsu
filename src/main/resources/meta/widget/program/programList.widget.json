@@ -1,0 +1,122 @@
+{
+  "name": "programList",
+  "title": "Реестр программ ЭВМ",
+  "type": "List",
+  "bc": "programRead",
+  "fields": [
+    {
+      "title": "Наименование",
+      "key": "name",
+      "type": "input",
+      "drillDown": true
+    },
+    {
+      "title": "№ регистрационного св-ва",
+      "key": "certificateNumber",
+      "type": "number"
+    },
+    {
+      "title": "№ заявки",
+      "key": "requestNumber",
+      "type": "number"
+    },
+    {
+      "title": "Факультет",
+      "key": "facultyName",
+      "type": "dictionary"
+    },
+    {
+      "title": "Кафедра",
+      "key": "departmentName",
+      "type": "dictionary"
+    },
+    {
+      "title": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "statusBgColor",
+      "width": 150
+    },
+    {
+      "title": "Дата уведомления о создании объекта",
+      "key": "notificationCreationDate",
+      "type": "date",
+      "hidden": true
+    },
+    {
+      "title": "Дата направления документов",
+      "key": "sendDocumentDate",
+      "type": "date",
+      "hidden": true
+    },
+    {
+      "title": "ФИО авторов",
+      "key": "authors",
+      "type": "multivalue",
+      "hidden": true
+    },
+    {
+      "title": "Обладатели имущественных авторских прав",
+      "key": "ownersCopyright",
+      "type": "text",
+      "hidden": true
+    },
+    {
+      "title": "Примечание",
+      "key": "note",
+      "type": "text",
+      "hidden": true
+    },
+    {
+      "title": "Где зарегистрировано",
+      "key": "registrationPlace",
+      "type": "input",
+      "hidden": true
+    },
+    {
+      "title": "Дата регистрации",
+      "key": "registrationDate",
+      "type": "date",
+      "hidden": true
+    },
+    {
+      "title": "Мои программы",
+      "key": "isMyPrograms",
+      "type": "checkbox",
+      "hidden": true
+    }
+  ],
+  "options": {
+    "drawerFilter": true,
+    "filtersOrder": [
+      "name",
+      "status",
+      "certificateNumber",
+      "requestNumber",
+      "facultyName",
+      "departmentName"
+    ],
+    "checkboxFiltersList": [
+      {
+        "filterName": "Мои программы",
+        "filterKey": "isMyPrograms"
+      }
+    ],
+    "table": {
+      "width": 1502
+    },
+    "actionGroups": {
+      "include": [
+        "create_program",
+        "delete_program",
+        "edit_program",
+        "deactivate_program",
+        "activate_program",
+        "open_program"
+      ]
+    },
+    "actionTheme": {
+      "create_program": "blue"
+    }
+  }
+}

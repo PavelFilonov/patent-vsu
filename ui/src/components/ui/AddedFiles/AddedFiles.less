@@ -1,0 +1,32 @@
+@import '~assets/styles/theme';
+
+.tagArea {
+    :global {
+        .ant-tag {
+            font-family: open_sansregular;
+            font-size: 16px;
+            line-height: 1.5;
+
+            background: @light-blue;
+            color: @black;
+            margin: 0 8px 8px 0;
+            padding: 0 5px 0 2px;
+            border-radius: 2px;
+            border: 0;
+
+            & .anticon-close {
+                color: #141414;
+                font-size: 16px;
+            }
+        }
+
+        .ant-tag,
+        .ant-tag a,
+        .ant-tag a:hover {
+            color: #141414;
+        }
+    }
+}
+.mb16 {
+    margin-bottom: 16px;
+}

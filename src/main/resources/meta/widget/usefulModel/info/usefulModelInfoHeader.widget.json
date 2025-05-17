@@ -1,0 +1,13 @@
+{
+  "name": "usefulModelInfoHeader",
+  "title": "${name}",
+  "type": "Header",
+  "bc": "usefulModelRead",
+  "fields": [
+    {
+      "label": "name",
+      "key": "name",
+      "type": "hidden"
+    }
+  ]
+}

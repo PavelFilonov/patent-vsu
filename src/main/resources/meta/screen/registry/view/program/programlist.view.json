@@ -1,0 +1,23 @@
+{
+  "name": "programlist",
+  "title": "Реестр программ ЭВМ",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/programlist",
+  "widgets": [
+    {
+      "widgetName": "SecondLevelMenu",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "programList",
+      "position": 2,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник",
+    "Автор"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "facultyinfo",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/administration/view/facultyinfo",
+  "widgets": [
+    {
+      "widgetName": "facultyInfoBack",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "facultyInfoHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "facultyInfo",
+      "position": 3,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор"
+  ]
+}

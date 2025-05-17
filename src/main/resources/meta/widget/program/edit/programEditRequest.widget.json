@@ -1,0 +1,69 @@
+{
+  "name": "programEditRequest",
+  "title": "Регистрация",
+  "type": "Form",
+  "bc": "programEdit",
+  "fields": [
+    {
+      "label": "Где зарегистрировано",
+      "key": "registrationPlace",
+      "type": "input"
+    },
+    {
+      "label": "Дата регистрации",
+      "key": "registrationDate",
+      "type": "date"
+    },
+    {
+      "label": "№ регистрационного свидетельства",
+      "key": "certificateNumber",
+      "type": "number"
+    },
+    {
+      "label": "№ заявки",
+      "key": "requestNumber",
+      "type": "number"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "registrationPlace",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "registrationDate",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "certificateNumber",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "requestNumber",
+              "span": 7
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  }
+}

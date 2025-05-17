@@ -1,0 +1,115 @@
+@import '../../assets/styles/theme.less';
+
+.logoContainer {
+    &:focus {
+        outline: none;
+    }
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-bottom: 16px;
+}
+
+.menu {
+    font-size: 20px;
+}
+
+.navigation {
+    overflow-y: auto;
+    :global {
+        .ant-menu-inline-collapsed > .ant-menu-item {
+            padding: 0 12px !important; // Bad practice, but antd has worse
+        }
+        .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+            padding: 0 !important; // Bad practice, but antd has worse
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.advancedNavigation {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.expandAll {
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: auto;
+    align-self: center;
+}
+
+.logoTitle {
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.85);
+    white-space: nowrap;
+}
+
+.menuContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: space-between;
+    height: 100%;
+    :global {
+        .ant-menu-inline-collapsed {
+            width: 48px;
+        }
+    }
+}
+
+.menuWrapper {
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    /* The emerging W3C standard
+   that is currently Firefox-only */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: white transparent;
+    }
+
+    /* Works on Chrome/Edge/Safari */
+    *::-webkit-scrollbar {
+        width: 4px;
+    }
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 2px;
+    }
+}
+
+.toggleButton {
+    :global {
+        .ant-btn {
+            border: none;
+            height: 48px;
+            font-size: 24px;
+            width: 48px;
+        }
+        .ant-btn > .anticon {
+            color: @brown-grey;
+        }
+    }
+}
+
+.devToggleButton {
+    :global {
+        .ant-btn > .anticon {
+            color: white;
+        }
+    }
+}

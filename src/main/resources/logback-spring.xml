@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="true" scanPeriod="60 seconds">
+  <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+    </encoder>
+  </appender>
+
+  <root level="INFO">
+    <appender-ref ref="STDOUT"/>
+  </root>
+
+  <logger name="org.zalando.logbook" level="INFO"/>
+  <logger name="net.ttddyy.dsproxy.listener" level="INFO"/>
+  <logger name="io.tesler.api.util.i18n.InfoMessageSource" level="ERROR"/>
+  <logger name="org.springframework.context.support.ResourceBundleMessageSource" level="ERROR"/>
+  <logger name="com.azure.identity" level="ERROR"/>
+  <logger name="org.springframework.web.socket.config" level="ERROR"/>
+</configuration>

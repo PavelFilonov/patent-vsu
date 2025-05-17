@@ -1,0 +1,11 @@
+{
+  "name": "departmentInfoBack",
+  "type": "HistoryBack",
+  "bc": "departmentRead",
+  "options": {
+    "historyBackOptions": {
+      "previousPage": "Кафедры",
+      "url": "/screen/administration"
+    }
+  }
+}

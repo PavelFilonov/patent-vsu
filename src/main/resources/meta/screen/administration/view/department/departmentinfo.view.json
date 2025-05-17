@@ -1,0 +1,26 @@
+{
+  "name": "departmentinfo",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/administration/view/departmentinfo",
+  "widgets": [
+    {
+      "widgetName": "departmentInfoBack",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "departmentInfoHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "departmentInfo",
+      "position": 3,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор"
+  ]
+}

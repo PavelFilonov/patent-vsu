@@ -1,0 +1,150 @@
+{
+  "name": "registry",
+  "icon": "solution",
+  "order": 1,
+  "title": "Реестры",
+  "primaryViewName": "innovationlist",
+  "navigation": {
+    "menu": [
+      {
+        "title": "Изобретение",
+        "child": [
+          {
+            "viewName": "innovationlist"
+          },
+          {
+            "viewName": "innovationeditmain"
+          },
+          {
+            "viewName": "innovationeditrequest"
+          },
+          {
+            "viewName": "innovationeditpatent"
+          },
+          {
+            "viewName": "innovationeditexpertise"
+          },
+          {
+            "viewName": "innovationeditadditional"
+          },
+          {
+            "viewName": "innovationinfo"
+          }
+        ]
+      },
+      {
+        "title": "Полезная модель",
+        "child": [
+          {
+            "viewName": "usefulmodellist"
+          },
+          {
+            "viewName": "usefulmodeleditmain"
+          },
+          {
+            "viewName": "usefulmodeleditrequest"
+          },
+          {
+            "viewName": "usefulmodeleditpatent"
+          },
+          {
+            "viewName": "usefulmodeleditexpertise"
+          },
+          {
+            "viewName": "usefulmodeleditadditional"
+          },
+          {
+            "viewName": "usefulmodelinfo"
+          }
+        ]
+      },
+      {
+        "title": "Программа ЭВМ",
+        "child": [
+          {
+            "viewName": "programlist"
+          },
+          {
+            "viewName": "programeditmain"
+          },
+          {
+            "viewName": "programeditrequest"
+          },
+          {
+            "viewName": "programinfo"
+          }
+        ]
+      },
+      {
+        "title": "База данных",
+        "child": [
+          {
+            "viewName": "databaselist"
+          },
+          {
+            "viewName": "databaseeditmain"
+          },
+          {
+            "viewName": "databaseeditrequest"
+          },
+          {
+            "viewName": "databaseinfo"
+          }
+        ]
+      },
+      {
+        "title": "Топология ИМ",
+        "child": [
+          {
+            "viewName": "circuitlist"
+          },
+          {
+            "viewName": "circuiteditmain"
+          },
+          {
+            "viewName": "circuiteditrequest"
+          },
+          {
+            "viewName": "circuitinfo"
+          }
+        ]
+      },
+      {
+        "title": "Договор",
+        "child": [
+          {
+            "viewName": "agreementlist"
+          },
+          {
+            "viewName": "agreementeditmain"
+          },
+          {
+            "viewName": "agreementeditsubject"
+          },
+          {
+            "viewName": "agreementinfo"
+          }
+        ]
+      },
+      {
+        "title": "Коммерческая тайна",
+        "child": [
+          {
+            "viewName": "tradesecretlist"
+          },
+          {
+            "viewName": "tradesecretedit"
+          },
+          {
+            "viewName": "tradesecretinfo"
+          }
+        ]
+      }
+    ]
+  },
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник",
+    "Автор"
+  ]
+}

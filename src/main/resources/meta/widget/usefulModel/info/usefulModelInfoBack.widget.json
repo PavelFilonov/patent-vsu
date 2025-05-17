@@ -1,0 +1,11 @@
+{
+  "name": "usefulModelInfoBack",
+  "type": "HistoryBack",
+  "bc": "usefulModelRead",
+  "options": {
+    "historyBackOptions": {
+      "previousPage": "",
+      "url": "/screen/registry"
+    }
+  }
+}

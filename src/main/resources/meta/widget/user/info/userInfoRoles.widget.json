@@ -1,0 +1,40 @@
+{
+  "name": "userInfoRoles",
+  "title": "Роли",
+  "type": "Info",
+  "bc": "userRead",
+  "fields": [
+    {
+      "label": "",
+      "key": "roles",
+      "type": "multivalue"
+    },
+    {
+      "label": "Главная роль",
+      "key": "mainRole",
+      "type": "input"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "roles",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "mainRole",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

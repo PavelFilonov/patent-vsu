@@ -1,0 +1,56 @@
+{
+  "name": "innovationEditAdditional",
+  "title": "Дополнения",
+  "type": "Form",
+  "bc": "innovationEdit",
+  "fields": [
+    {
+      "label": "Примечания",
+      "key": "note",
+      "type": "text"
+    },
+    {
+      "label": "Действие",
+      "key": "action",
+      "type": "input"
+    },
+    {
+      "label": "Использование",
+      "key": "usage",
+      "type": "text"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "note",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "action",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "usage",
+              "span": 7
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  }
+}

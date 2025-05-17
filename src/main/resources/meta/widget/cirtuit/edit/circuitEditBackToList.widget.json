@@ -1,0 +1,17 @@
+{
+  "name": "circuitEditBackToList",
+  "type": "BackToList",
+  "bc": "integratedCircuitEdit",
+  "showCondition": [],
+  "fields": [],
+  "axisFields": [],
+  "chart": [],
+  "options": {
+    "previousPage": "",
+    "actionGroups": {
+      "include": [
+        "cancel"
+      ]
+    }
+  }
+}

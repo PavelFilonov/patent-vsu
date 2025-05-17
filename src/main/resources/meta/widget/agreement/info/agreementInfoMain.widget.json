@@ -1,0 +1,197 @@
+{
+  "name": "agreementInfoMain",
+  "title": "Основные данные",
+  "type": "Info",
+  "bc": "agreementRead",
+  "fields": [
+    {
+      "label": "№ п/п",
+      "key": "number",
+      "type": "number"
+    },
+    {
+      "label": "№ договора",
+      "key": "agreementNumber",
+      "type": "number"
+    },
+    {
+      "label": "Дата подписания",
+      "key": "signDate",
+      "type": "date"
+    },
+    {
+      "label": "Дата окончания",
+      "key": "endDate",
+      "type": "date"
+    },
+    {
+      "label": "Лицензиат",
+      "key": "licensee",
+      "type": "input"
+    },
+    {
+      "label": "Вид договора",
+      "key": "type",
+      "type": "input"
+    },
+    {
+      "label": "Срок договора",
+      "key": "period",
+      "type": "number"
+    },
+    {
+      "label": "Сумма по договору, % в уставном капитале",
+      "key": "amount",
+      "type": "number"
+    },
+    {
+      "label": "Доп. соглашения",
+      "key": "additionalAgreement",
+      "type": "text"
+    },
+    {
+      "label": "Контактные данные Лицензиата",
+      "key": "licenseeContactInfo",
+      "type": "text"
+    },
+    {
+      "label": "Регистрационный номер Роспатента",
+      "key": "registrationNumber",
+      "type": "number"
+    },
+    {
+      "label": "Соглашение, в рамках которого подписан договор",
+      "key": "parentAgreement",
+      "type": "input"
+    },
+    {
+      "label": "Примечение",
+      "key": "note",
+      "type": "text"
+    },
+    {
+      "label": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "statusBgColor"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "number",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "agreementNumber",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "signDate",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "endDate",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "licensee",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "type",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "period",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "amount",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "additionalAgreement",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "licenseeContactInfo",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "registrationNumber",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "parentAgreement",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "note",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "status",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

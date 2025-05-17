@@ -1,0 +1,53 @@
+{
+  "name": "usefulModelInfoPatent",
+  "title": "Патент",
+  "type": "Info",
+  "bc": "usefulModelRead",
+  "fields": [
+    {
+      "label": "№ патента",
+      "key": "patentNumber",
+      "type": "number"
+    },
+    {
+      "label": "Дата государственной регистрации",
+      "key": "registrationDate",
+      "type": "date"
+    },
+    {
+      "label": "Дата приоритета патента",
+      "key": "priorityDate",
+      "type": "date"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "patentNumber",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "registrationDate",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "priorityDate",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

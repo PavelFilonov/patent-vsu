@@ -1,0 +1,8 @@
+{
+  "name": "facultyEditHeader",
+  "title": "Редактирование факультета",
+  "type": "Header",
+  "bc": "facultyEdit",
+  "fields": [
+  ]
+}

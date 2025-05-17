@@ -1,0 +1,33 @@
+{
+  "name": "databaseinfo",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/databaseinfo",
+  "widgets": [
+    {
+      "widgetName": "databaseInfoBack",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "databaseInfoHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "databaseInfoMain",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "databaseInfoRequest",
+      "position": 4,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник",
+    "Автор"
+  ]
+}

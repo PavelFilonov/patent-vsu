@@ -1,0 +1,135 @@
+{
+  "name": "agreementList",
+  "title": "Реестр договоров",
+  "type": "List",
+  "bc": "agreementRead",
+  "fields": [
+    {
+      "title": "№ п/п",
+      "key": "number",
+      "type": "number",
+      "drillDown": true
+    },
+    {
+      "title": "№ договора",
+      "key": "agreementNumber",
+      "type": "number"
+    },
+    {
+      "title": "Вид договора",
+      "key": "type",
+      "type": "input"
+    },
+    {
+      "title": "Вид объекта",
+      "key": "subjectType",
+      "type": "dictionary"
+    },
+    {
+      "title": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "statusBgColor",
+      "width": 150
+    },
+    {
+      "title": "Название объекта",
+      "key": "subjectName",
+      "type": "input",
+      "hidden": true
+    },
+    {
+      "title": "№ охранного документа",
+      "key": "subjectNumber",
+      "type": "number",
+      "hidden": true
+    },
+    {
+      "title": "Дата подписания",
+      "key": "signDate",
+      "type": "date",
+      "hidden": true
+    },
+    {
+      "title": "Дата окончания",
+      "key": "endDate",
+      "type": "date",
+      "hidden": true
+    },
+    {
+      "title": "Лицензиат",
+      "key": "licensee",
+      "type": "input",
+      "hidden": true
+    },
+    {
+      "title": "Срок договора",
+      "key": "period",
+      "type": "number",
+      "hidden": true
+    },
+    {
+      "title": "Сумма по договору, % в уставном капитале",
+      "key": "amount",
+      "type": "number",
+      "hidden": true
+    },
+    {
+      "title": "Доп. соглашения",
+      "key": "additionalAgreement",
+      "type": "text",
+      "hidden": true
+    },
+    {
+      "title": "Контактные данные Лицензиата",
+      "key": "licenseeContactInfo",
+      "type": "text",
+      "hidden": true
+    },
+    {
+      "title": "Регистрационный номер Роспатента",
+      "key": "registrationNumber",
+      "type": "number",
+      "hidden": true
+    },
+    {
+      "title": "Соглашение, в рамках которого подписан договор",
+      "key": "parentAgreement",
+      "type": "input",
+      "hidden": true
+    },
+    {
+      "title": "Примечение",
+      "key": "note",
+      "type": "text",
+      "hidden": true
+    }
+  ],
+  "options": {
+    "drawerFilter": true,
+    "filtersOrder": [
+      "number",
+      "agreementNumber",
+      "status",
+      "type",
+      "subjectNumber",
+      "subjectName",
+      "subjectType"
+    ],
+    "table": {
+      "width": 1502
+    },
+    "actionGroups": {
+      "include": [
+        "create_agreement",
+        "delete_agreement",
+        "edit_agreement",
+        "deactivate_agreement",
+        "activate_agreement"
+      ]
+    },
+    "actionTheme": {
+      "create_agreement": "blue"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "circuitEditHeader",
+  "title": "Редактирование топологии интегральных микросхем",
+  "type": "Header",
+  "bc": "integratedCircuitEdit",
+  "fields": [
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "departmentInfo",
+  "title": "",
+  "type": "Info",
+  "bc": "departmentRead",
+  "fields": [
+    {
+      "label": "Наименование кафедры",
+      "key": "name",
+      "type": "input"
+    },
+    {
+      "label": "Факультет",
+      "key": "facultyName",
+      "type": "dictionary"
+    },
+    {
+      "label": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "statusBgColor"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "name",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "facultyName",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "status",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

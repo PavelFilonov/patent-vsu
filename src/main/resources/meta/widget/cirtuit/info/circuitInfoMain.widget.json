@@ -1,0 +1,132 @@
+{
+  "name": "circuitInfoMain",
+  "title": "Основные данные",
+  "type": "Info",
+  "bc": "integratedCircuitRead",
+  "fields": [
+    {
+      "label": "Наименование",
+      "key": "name",
+      "type": "input"
+    },
+    {
+      "label": "Дата уведомления о создании объекта",
+      "key": "notificationCreationDate",
+      "type": "date"
+    },
+    {
+      "label": "Дата направления документов",
+      "key": "sendDocumentDate",
+      "type": "date"
+    },
+    {
+      "label": "ФИО авторов",
+      "key": "authors",
+      "type": "multivalue"
+    },
+    {
+      "label": "Факультет",
+      "key": "facultyName",
+      "type": "dictionary"
+    },
+    {
+      "label": "Кафедра",
+      "key": "departmentName",
+      "type": "dictionary"
+    },
+    {
+      "label": "Обладатели имущественных авторских прав",
+      "key": "ownersCopyright",
+      "type": "text"
+    },
+    {
+      "label": "Примечание",
+      "key": "note",
+      "type": "text"
+    },
+    {
+      "label": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "statusBgColor"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "name",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "notificationCreationDate",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "sendDocumentDate",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "authors",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "facultyName",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "departmentName",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "ownersCopyright",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "note",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "status",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

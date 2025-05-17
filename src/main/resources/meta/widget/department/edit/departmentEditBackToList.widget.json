@@ -1,0 +1,17 @@
+{
+  "name": "departmentEditBackToList",
+  "type": "BackToList",
+  "bc": "departmentEdit",
+  "showCondition": [],
+  "fields": [],
+  "axisFields": [],
+  "chart": [],
+  "options": {
+    "previousPage": "Кафедры",
+    "actionGroups": {
+      "include": [
+        "cancel"
+      ]
+    }
+  }
+}

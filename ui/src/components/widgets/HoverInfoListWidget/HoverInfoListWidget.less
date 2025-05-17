@@ -1,0 +1,52 @@
+@import '../../../assets/styles/theme.less';
+
+.container {
+    max-width: 492px;
+    overflow-y: auto;
+    word-break: break-word;
+    margin-top: 8px;
+}
+
+.fieldArea {
+    margin-top: 8px;
+}
+
+.multiValueArea {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.items {
+    font-family: open_sansregular;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+    list-style-type: decimal;
+    padding-left: 28px;
+}
+
+.label {
+    font-family: open_sansbold;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.data {
+    font-family: open_sansregular;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+
+    > span {
+        overflow: hidden;
+        position: relative;
+        line-height: 22px;
+        max-height: 44px;
+        padding-right: 15px;
+    }
+}
+
+.hint {
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.5;
+}

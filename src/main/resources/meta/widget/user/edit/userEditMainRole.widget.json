@@ -1,0 +1,33 @@
+{
+  "name": "userEditMainRole",
+  "title": "Главная роль",
+  "type": "Form",
+  "bc": "userEdit",
+  "fields": [
+    {
+      "label": "",
+      "key": "mainRole",
+      "type": "dictionary"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "mainRole",
+              "span": 7
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  },
+  "rolesAllowed": [
+    "Administrator"
+  ]
+}

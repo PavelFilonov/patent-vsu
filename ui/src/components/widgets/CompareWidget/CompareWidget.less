@@ -1,0 +1,65 @@
+@import '~assets/styles/theme';
+
+.container {
+    padding: 24px 0;
+    min-width: 1304px;
+    display: flex;
+    flex-flow: column nowrap;
+    color: rgba(0, 0, 0, 0.85);
+
+    .fieldTitle {
+        font-size: 24px;
+        font-family: open_sanssemibold;
+    }
+
+    .title {
+        font-size: 12px;
+        font-family: open_sanssemibold;
+        padding-bottom: 5px;
+    }
+
+    .textArea {
+        font-size: 12px;
+        padding-bottom: 24px;
+    }
+
+    .description {
+        padding-left: 8px;
+        font-family: open_sansregular;
+        opacity: 0.5;
+    }
+
+    .link {
+        color: @nice-blue;
+        font-size: 12px;
+        padding-left: 8px;
+    }
+
+    .copyLink {
+        margin-right: 8px;
+        color: @nice-blue;
+        font-size: 12px;
+    }
+
+    .copyContainer {
+        padding-top: 4px;
+    }
+}
+
+.added {
+    background-color: rgba(109, 212, 0, 0.2);
+}
+
+.removed {
+    text-decoration: line-through;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.row {
+    vertical-align: top;
+}
+
+.cell {
+    padding-right: 30px;
+    width: 50%;
+}

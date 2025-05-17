@@ -1,0 +1,19 @@
+{
+  "name": "facultyEditButtons",
+  "title": "",
+  "type": "Form",
+  "bc": "facultyEdit",
+  "fields": [],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "cancel",
+        "finish"
+      ]
+    },
+    "actionTheme": {
+      "cancel": "link",
+      "finish": "blue"
+    }
+  }
+}

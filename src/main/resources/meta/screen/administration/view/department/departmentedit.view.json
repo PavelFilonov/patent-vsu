@@ -1,0 +1,31 @@
+{
+  "name": "departmentedit",
+  "title": "Редактирование кафедры",
+  "template": "DashboardView",
+  "url": "/screen/administration/view/departmentedit",
+  "widgets": [
+    {
+      "widgetName": "departmentEditBackToList",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "departmentEditHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "departmentEdit",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "departmentEditButtons",
+      "position": 4,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор"
+  ]
+}

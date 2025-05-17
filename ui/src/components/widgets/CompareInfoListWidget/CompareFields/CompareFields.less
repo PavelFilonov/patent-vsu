@@ -1,0 +1,42 @@
+@import '../../../../assets/styles/theme.less';
+
+.fieldValue {
+    max-width: 150px;
+    padding: 0 6px;
+    line-height: 22px;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.fieldWrapper {
+    > span {
+        font-family: open_sansregular;
+        line-height: 1.5;
+        font-size: 16px;
+        color: @black;
+    }
+}
+
+.multivalueWrapper.removed {
+    a,
+    div > div {
+        text-decoration: line-through;
+    }
+}
+
+.field {
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.added {
+    background-color: @pale-green;
+}
+
+.removed {
+    background-color: rgba(255, 0, 0, 0.3);
+    text-decoration: line-through;
+}

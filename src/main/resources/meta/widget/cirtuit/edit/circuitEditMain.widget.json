@@ -1,0 +1,108 @@
+{
+  "name": "circuitEditMain",
+  "title": "Основные данные",
+  "type": "Form",
+  "bc": "integratedCircuitEdit",
+  "fields": [
+    {
+      "label": "Наименование",
+      "key": "name",
+      "type": "input"
+    },
+    {
+      "label": "Дата уведомления о создании объекта",
+      "key": "notificationCreationDate",
+      "type": "date"
+    },
+    {
+      "label": "Дата направления документов",
+      "key": "sendDocumentDate",
+      "type": "date"
+    },
+    {
+      "label": "ФИО авторов",
+      "key": "authors",
+      "type": "multipleSelect"
+    },
+    {
+      "label": "Кафедра",
+      "key": "departmentName",
+      "type": "dictionary"
+    },
+    {
+      "label": "Обладатели имущественных авторских прав",
+      "key": "ownersCopyright",
+      "type": "text"
+    },
+    {
+      "label": "Примечание",
+      "key": "note",
+      "type": "text"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "name",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "notificationCreationDate",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "sendDocumentDate",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "authors",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "departmentName",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "ownersCopyright",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "note",
+              "span": 7
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  }
+}

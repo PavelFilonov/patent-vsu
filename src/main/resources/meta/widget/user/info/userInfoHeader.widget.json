@@ -1,0 +1,13 @@
+{
+  "name": "userInfoHeader",
+  "title": "${fullName}",
+  "type": "Header",
+  "bc": "userRead",
+  "fields": [
+    {
+      "label": "fullName",
+      "key": "fullName",
+      "type": "hidden"
+    }
+  ]
+}

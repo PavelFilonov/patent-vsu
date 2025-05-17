@@ -1,0 +1,13 @@
+{
+  "name": "departmentInfoHeader",
+  "title": "${name}",
+  "type": "Header",
+  "bc": "departmentRead",
+  "fields": [
+    {
+      "label": "name",
+      "key": "name",
+      "type": "hidden"
+    }
+  ]
+}

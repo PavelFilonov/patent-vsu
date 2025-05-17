@@ -1,0 +1,54 @@
+@import '~assets/styles/theme';
+
+.filterButtonsBlock {
+    display: flex;
+    margin-right: 40px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    :global(.ant-badge-count) {
+        margin-right: 4px;
+        z-index: auto;
+        min-width: 24px;
+        height: 24px;
+        padding: 0 6px;
+        color: #fff;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        white-space: nowrap;
+        text-align: center;
+        background: @brown-grey;
+        border-radius: 12px;
+        box-shadow: 0 0 0 1px #fff;
+    }
+}
+
+:global(.ant-btn).operation {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.57;
+    color: @nice-blue;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.filterLabel {
+    color: @nice-blue;
+}
+
+:global(.anticon-close).filterCloseIcon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

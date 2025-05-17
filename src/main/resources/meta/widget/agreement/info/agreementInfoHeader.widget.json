@@ -1,0 +1,13 @@
+{
+  "name": "agreementInfoHeader",
+  "title": "${number}",
+  "type": "Header",
+  "bc": "agreementRead",
+  "fields": [
+    {
+      "label": "number",
+      "key": "number",
+      "type": "hidden"
+    }
+  ]
+}

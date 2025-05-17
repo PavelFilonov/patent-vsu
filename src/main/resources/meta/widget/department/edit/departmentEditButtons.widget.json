@@ -1,0 +1,19 @@
+{
+  "name": "departmentEditButtons",
+  "title": "",
+  "type": "Form",
+  "bc": "departmentEdit",
+  "fields": [],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "cancel",
+        "finish"
+      ]
+    },
+    "actionTheme": {
+      "cancel": "link",
+      "finish": "blue"
+    }
+  }
+}

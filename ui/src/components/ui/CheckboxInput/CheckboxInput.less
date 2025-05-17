@@ -1,0 +1,44 @@
+.container {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.checkbox {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+
+    &::before {
+        height: 21px;
+        width: 21px;
+        content: url('~assets/icons/unchecked.svg');
+    }
+}
+
+.selected {
+    &::before {
+        content: url('~assets/icons/checked.svg');
+    }
+}
+
+.indeterminate {
+    &::before {
+        content: url('~assets/icons/indeterminate.svg');
+    }
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.label {
+    padding-left: 10px;
+}

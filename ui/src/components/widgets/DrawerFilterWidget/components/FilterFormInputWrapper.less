@@ -1,0 +1,33 @@
+.header {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.filterFormInputWrapper:not(:first-child) {
+    margin-top: 20px;
+}
+
+.filterFormInputWrapper {
+    :global {
+        .ant-calendar-picker {
+            width: 100%;
+        }
+
+        .ant-select-selection--multiple {
+            .ant-select-selection__choice {
+                margin: 2px;
+                border-radius: 2px;
+                background: #c8e5ff;
+                border: 1px solid #c8e5ff;
+
+                &__content {
+                    font-size: 16px;
+                    line-height: unset;
+                    color: #000;
+                    font-family: open_sansregular;
+                }
+            }
+        }
+    }
+}

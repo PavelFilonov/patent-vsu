@@ -1,0 +1,71 @@
+@import '~assets/styles/theme';
+
+.info {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    background: url('../../ui/CustomColumns/img/info.svg');
+
+    &:hover {
+        background: url('../../ui/CustomColumns/img/infoHover.svg');
+    }
+}
+
+.title {
+    font-size: 24px;
+    font-family: open_sanssemibold;
+}
+
+.label {
+    font-family: open_sansbold;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 5px;
+}
+
+.data {
+    font-family: open_sansregular;
+    margin-bottom: 3px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+
+    > span {
+        overflow: hidden;
+        position: relative;
+        line-height: 22px;
+        max-height: 44px;
+        padding-right: 15px;
+    }
+}
+
+.fieldArea {
+    margin-bottom: 12px;
+}
+
+.hint {
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.5;
+}
+
+.popoverContainer {
+    max-width: 492px;
+
+    :global {
+        .ant-popover-inner-content {
+            padding: 24px;
+            font-family: open_sansregular;
+            font-size: 16px;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            color: rgba(0, 0, 0, 0.85);
+        }
+
+        .ant-popover-arrow {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "innovationeditadditional",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/registry/view/innovationeditadditional",
+  "widgets": [
+    {
+      "widgetName": "innovationEditBackToList",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "innovationEditHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "innovationEditStep",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "innovationEditAdditional",
+      "position": 4,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "innovationEditButtons",
+      "position": 5,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор",
+    "Сотрудник"
+  ]
+}

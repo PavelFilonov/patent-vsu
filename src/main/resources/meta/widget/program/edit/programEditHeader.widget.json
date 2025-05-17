@@ -1,0 +1,8 @@
+{
+  "name": "programEditHeader",
+  "title": "Редактирование программы ЭВМ",
+  "type": "Header",
+  "bc": "programEdit",
+  "fields": [
+  ]
+}

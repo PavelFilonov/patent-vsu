@@ -1,0 +1,13 @@
+{
+  "name": "databaseInfoHeader",
+  "title": "${name}",
+  "type": "Header",
+  "bc": "databaseRead",
+  "fields": [
+    {
+      "label": "name",
+      "key": "name",
+      "type": "hidden"
+    }
+  ]
+}

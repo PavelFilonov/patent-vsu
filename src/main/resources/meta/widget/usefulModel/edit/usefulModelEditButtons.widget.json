@@ -1,0 +1,23 @@
+{
+  "name": "usefulModelEditButtons",
+  "title": "",
+  "type": "Form",
+  "bc": "usefulModelEdit",
+  "fields": [],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "cancel",
+        "saveAsDraft",
+        "previous",
+        "next",
+        "finish"
+      ]
+    },
+    "actionTheme": {
+      "next": "blue",
+      "finish": "blue",
+      "cancel": "link"
+    }
+  }
+}

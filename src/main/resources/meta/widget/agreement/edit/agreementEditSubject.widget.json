@@ -1,0 +1,56 @@
+{
+  "name": "agreementEditSubject",
+  "title": "Предмет договора",
+  "type": "Form",
+  "bc": "agreementEdit",
+  "fields": [
+    {
+      "label": "Вид объекта",
+      "key": "subjectType",
+      "type": "dictionary"
+    },
+    {
+      "label": "Название",
+      "key": "subjectName",
+      "type": "input"
+    },
+    {
+      "label": "№ охранного документа",
+      "key": "subjectNumber",
+      "type": "number"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "subjectType",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "subjectName",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "subjectNumber",
+              "span": 7
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  }
+}

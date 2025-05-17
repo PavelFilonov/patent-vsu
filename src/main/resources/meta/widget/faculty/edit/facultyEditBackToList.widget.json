@@ -1,0 +1,17 @@
+{
+  "name": "facultyEditBackToList",
+  "type": "BackToList",
+  "bc": "facultyEdit",
+  "showCondition": [],
+  "fields": [],
+  "axisFields": [],
+  "chart": [],
+  "options": {
+    "previousPage": "Факультеты",
+    "actionGroups": {
+      "include": [
+        "cancel"
+      ]
+    }
+  }
+}

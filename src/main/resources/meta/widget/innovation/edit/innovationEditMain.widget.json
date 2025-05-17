@@ -1,0 +1,56 @@
+{
+  "name": "innovationEditMain",
+  "title": "Основные данные",
+  "type": "Form",
+  "bc": "innovationEdit",
+  "fields": [
+    {
+      "label": "Наименование предполагаемого изобретения полезной модели промышленного образца",
+      "key": "name",
+      "type": "input"
+    },
+    {
+      "label": "Дело №",
+      "key": "number",
+      "type": "number"
+    },
+    {
+      "label": "ФИО авторов",
+      "key": "authors",
+      "type": "multipleSelect"
+    }
+  ],
+  "options": {
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "name",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "number",
+              "span": 7
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "authors",
+              "span": 7
+            }
+          ]
+        }
+      ]
+    },
+    "actionGroups": {
+      "include": []
+    }
+  }
+}

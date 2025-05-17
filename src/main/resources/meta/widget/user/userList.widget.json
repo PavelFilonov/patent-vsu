@@ -1,0 +1,83 @@
+{
+  "name": "userList",
+  "title": "Пользователи",
+  "type": "List",
+  "bc": "userRead",
+  "fields": [
+    {
+      "title": "Логин",
+      "key": "login",
+      "type": "input",
+      "width": 200,
+      "drillDown": true
+    },
+    {
+      "title": "Имя",
+      "key": "firstName",
+      "type": "input",
+      "width": 250
+    },
+    {
+      "title": "Фамилия",
+      "key": "lastName",
+      "type": "input",
+      "width": 250
+    },
+    {
+      "title": "Отчество",
+      "key": "patronymic",
+      "type": "input",
+      "width": 250
+    },
+    {
+      "title": "Статус",
+      "key": "status",
+      "type": "dictionary",
+      "bgColorKey": "statusBgColor",
+      "width": 150
+    },
+    {
+      "title": "",
+      "key": "roles",
+      "type": "multivalue",
+      "hidden": true
+    },
+    {
+      "title": "Главная роль",
+      "key": "mainRole",
+      "type": "input",
+      "hidden": true
+    },
+    {
+      "title": "",
+      "key": "fullName",
+      "type": "input",
+      "hidden": true
+    }
+  ],
+  "options": {
+    "drawerFilter": true,
+    "filtersOrder": [
+      "login",
+      "firstName",
+      "lastName",
+      "patronymic",
+      "status"
+    ],
+    "table": {
+      "width": 1502
+    },
+    "actionGroups": {
+      "include": [
+        "create_user",
+        "delete_user",
+        "edit_user",
+        "deactivate_user",
+        "activate_user"
+      ]
+    },
+    "actionTheme": {
+      "create_user": "blue"
+    }
+  }
+}

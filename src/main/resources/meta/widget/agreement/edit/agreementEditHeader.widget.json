@@ -1,0 +1,8 @@
+{
+  "name": "agreementEditHeader",
+  "title": "Редактирование договора",
+  "type": "Header",
+  "bc": "agreementEdit",
+  "fields": [
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "userinfo",
+  "title": "",
+  "template": "DashboardView",
+  "url": "/screen/administration/view/userinfo",
+  "widgets": [
+    {
+      "widgetName": "userInfoBack",
+      "position": 1,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "userInfoHeader",
+      "position": 2,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "userInfoPersonalAttributes",
+      "position": 3,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "userInfoRoles",
+      "position": 4,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "userEditPassword",
+      "position": 5,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "Администратор"
+  ]
+}

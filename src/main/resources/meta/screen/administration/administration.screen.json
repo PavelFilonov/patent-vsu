@@ -1,0 +1,62 @@
+{
+  "name": "administration",
+  "icon": "tool",
+  "order": 0,
+  "title": "Администрирование",
+  "primaryViewName": "userlist",
+  "navigation": {
+    "menu": [
+      {
+        "title": "Пользователи",
+        "child": [
+          {
+            "viewName": "userlist"
+          },
+          {
+            "viewName": "usereditpersonal"
+          },
+          {
+            "viewName": "usereditroles"
+          },
+          {
+            "viewName": "usereditmainrole"
+          },
+          {
+            "viewName": "userinfo"
+          }
+        ]
+      },
+      {
+        "title": "Факультеты",
+        "child": [
+          {
+            "viewName": "facultylist"
+          },
+          {
+            "viewName": "facultyinfo"
+          },
+          {
+            "viewName": "facultyedit"
+          }
+        ]
+      },
+      {
+        "title": "Кафедры",
+        "child": [
+          {
+            "viewName": "departmentlist"
+          },
+          {
+            "viewName": "departmentinfo"
+          },
+          {
+            "viewName": "departmentedit"
+          }
+        ]
+      }
+    ]
+  },
+  "rolesAllowed": [
+    "Администратор"
+  ]
+}

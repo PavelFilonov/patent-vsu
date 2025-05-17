@@ -1,0 +1,89 @@
+app:
+  ui-path: /ui
+
+scheduled:
+  lock-at-most-for: PT30M
+  lock-at-least-for: PT1M
+  timezone: Etc/GMT
+  cron: 
+    clean-data: 0 0 21 * * ?
+
+tesler:
+  bean:
+    multipart-resolver:
+      enabled: false
+  meta:
+    dev-panel-enabled: ${DEV_PANEL_ENABLED:true}
+    directory: ${META_DIRECTORY:file:./src/main/resources/meta}
+    view-allowed-roles-enabled: true
+  widget:
+    fields:
+      include-packages: io.tesler.core.ui.model.json.field.subtypes, com.vsu.patent.conf.tesler.meta
+  api:
+    path: /api/v1
+    use-servlet-context-path: false
+  ui:
+    path: /ui
+    use-servlet-context-path: false
+
+server:
+  port: 8080
+  forward-headers-strategy: framework
+  servlet:
+    session:
+      cookie:
+        http-only: true
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: -1
+  datasource:
+    name: primaryDS
+    driver-class-name: ${DATABASE_DRIVER:org.postgresql.Driver}
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${DATABASE_USER:postgres}
+    password: ${DATABASE_PASSWORD:postgres}
+    hikari:
+      maximum-pool-size: ${DATABASE_POOL_SIZE_MAX:50}
+      minimum-idle: ${DATABASE_POOL_SIZE_MIN:20}
+  liquibase:
+    change-log: classpath:/db/db.changelog-master.xml
+    contexts: local
+  cache:
+    type: None
+  jpa:
+    properties:
+      hibernate:
+        session_factory:
+          interceptor: com.vsu.patent.conf.db.WorkflowEntityInterceptor
+        synonyms: true
+        default_batch_fetch_size: 100
+        order_updates: true
+        order_inserts: true
+        batch_versioned_data: true
+        batch_fetch_style: DYNAMIC
+        enable_lazy_load_no_trans: true
+        criteria:
+          literal_handling_mode: BIND
+        connection:
+          includeSynonyms: true
+          charSet: UTF-8
+        jdbc:
+          batch_size: 100
+        metadata_builder_contributor: com.vsu.patent.conf.db.FunctionContributor
+    hibernate:
+      naming:
+        physical-strategy: io.tesler.model.core.hbn.ImprovedPhysicalNamingStrategy
+  main:
+    allow-bean-definition-overriding: true
+    banner-mode: off
+
+minio:
+  access:
+    name: ${MINIO_ACCESS_KEY:minio-access-key}
+    secret: ${MINIO_SECRET_KEY:minio-secret-key}
+  url: ${MINIO_URL:http://localhost:9000}
+  bucket:
+    name: ${MINIO_DEFAULT_BUCKETS:minio-default-bucket}

@@ -1,0 +1,77 @@
+@import '../../../assets/styles/theme.less';
+
+.container {
+    margin-top: 40px;
+}
+
+@media (max-width: 1639px) {
+    .container {
+        padding: 8px 40px;
+    }
+}
+
+.comparedInfoCard {
+    border: solid @brown-grey 1px;
+    padding: 16px 16px 24px;
+
+    .header {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 0;
+        line-height: 1;
+
+        display: flex;
+        justify-content: space-between;
+
+        .icon {
+            display: block;
+            font-size: 15px;
+            color: @brown-grey;
+            cursor: pointer;
+        }
+    }
+
+    .multivalue {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .field,
+    .multivalue {
+        margin-top: 8px;
+        font-size: 16px;
+        color: @primary-black-for-text;
+        font-weight: 600;
+    }
+
+    .field {
+        display: block;
+    }
+
+    .more {
+        color: @brown-grey;
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 6px;
+        padding-bottom: 1px;
+    }
+
+    .checkboxContainer {
+        margin-top: 32px;
+
+        .checkbox {
+            font-size: 16px;
+            color: @primary-black-for-text;
+
+            :global(.ant-checkbox-inner) {
+                height: 21px;
+                width: 21px;
+
+                &:after {
+                    width: 7px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+}
