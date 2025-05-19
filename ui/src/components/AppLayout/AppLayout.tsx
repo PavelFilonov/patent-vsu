@@ -31,7 +31,7 @@ import WithHintIconField from '../fields/WithHintIconField/WithHintIconField'
 import LoadingProgress from '../ui/LoadingProgress/LoadingProgress'
 import SmSpinReplacer from '../ui/SmSpinReplacer/SmSpinReplacer'
 import CheckboxSelectField from '../fields/CheckboxSelectField/CheckboxSelectField'
-import DevPanel from '../DevPanel/DevPanel'
+// import DevPanel from '../DevPanel/DevPanel'
 import SinglePickField from '../fields/SinglePickField/SinglePickField'
 import {customWidgets} from '../customWidgets'
 import PickListField from '../fields/PickListField/PickListField'
@@ -124,7 +124,7 @@ const Layout: React.FunctionComponent<LayoutProps> = props => {
         <div className={styles.Container}>
             <LoadingProgress />
             <AntLayout>
-                <DevPanel />
+                {/*<DevPanel />*/}
                 <div className={styles.errorPopup}>
                     {error && !isPopUp && <ErrorPopup title="Error" error={error} onClose={onErrorClose} />}
                 </div>
