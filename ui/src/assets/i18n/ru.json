@@ -25,6 +25,9 @@
         "Back": "Назад",
         "Administration": "Администрирование",
         "Sign Out": "Выйти",
-        "Select date": "Выбрать дату"
+        "Select date": "Выбрать дату",
+        "Select All": "Выбрать все",
+        "No data": "Нет данных",
+        "No Data": "Нет данных"
     }
 }

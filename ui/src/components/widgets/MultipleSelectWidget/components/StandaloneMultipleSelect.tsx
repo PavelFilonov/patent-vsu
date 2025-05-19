@@ -18,10 +18,10 @@ const StandaloneMultipleSelect: React.FunctionComponent<StandaloneMultipleSelect
     const {data, checkIfSelected, onSelectAll, disabled, onSelect, valueKey, allSelected, indeterminate} = props
     return (
         <div className={styles.container}>
-            {data.length === 0 && <span className={styles.noData}>No data</span>}
+            {data.length === 0 && <span className={styles.noData}>Нет данных</span>}
             {data.length > 0 && (
                 <CheckboxInput
-                    value="Select All"
+                    value="Выбрать все"
                     onChange={onSelectAll}
                     disabled={disabled}
                     selected={allSelected}
